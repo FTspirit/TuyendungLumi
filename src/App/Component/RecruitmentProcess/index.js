@@ -47,7 +47,6 @@ function RecruitmentProcess() {
             <img src={process4} alt="process" className="Process-Image" />
             <p className="Process-Description">Phỏng vấn trực tiếp</p>
           </div>
-          <img src={arrow} alt="arrow" className="Process-Arrow rotate" />
         </div>
       </Container>
     </div>
