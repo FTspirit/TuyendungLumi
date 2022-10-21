@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/TuyendungLumi/static/css/main.4395b731.css",
+    "main.js": "/TuyendungLumi/static/js/main.756c79a6.js",
+    "static/media/cover1.png": "/TuyendungLumi/static/media/cover1.73738b389dd7a3a46ddd.png",
+    "static/media/blogcover1.png": "/TuyendungLumi/static/media/blogcover1.680934e1603c646e8ddf.png",
+    "static/media/cover8.png": "/TuyendungLumi/static/media/cover8.2b0e4004ee519705c0fd.png",
+    "static/media/cover7.png": "/TuyendungLumi/static/media/cover7.ad09c321c11da8f116bf.png",
+    "static/media/cover9.png": "/TuyendungLumi/static/media/cover9.4302c1ac2834282a6f45.png",
+    "static/media/cover2.png": "/TuyendungLumi/static/media/cover2.1e774f2ca43f008c8727.png",
+    "static/media/cover5.png": "/TuyendungLumi/static/media/cover5.10fd0e073d581c3ab72a.png",
+    "static/media/carouselmockup.png": "/TuyendungLumi/static/media/carouselmockup.74114671d31484edc1c8.png",
+    "static/media/carouselmockup2.png": "/TuyendungLumi/static/media/carouselmockup2.2dd70ecd34805f4114e7.png",
+    "static/media/carouselmockup1.png": "/TuyendungLumi/static/media/carouselmockup1.5ca9574c6d7be8cf5e9f.png",
+    "index.html": "/TuyendungLumi/index.html",
+    "main.4395b731.css.map": "/TuyendungLumi/static/css/main.4395b731.css.map",
+    "main.756c79a6.js.map": "/TuyendungLumi/static/js/main.756c79a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4395b731.css",
+    "static/js/main.756c79a6.js"
+  ]
+}
