@@ -1,0 +1,23 @@
+.CarouselCard-Container {
+  background-color: transparent !important;
+  border: none !important;
+  align-items: center;
+  width: 30rem;
+  height: 30rem;
+  filter: brightness(60%);
+}
+.CarouselCard-Image {
+  max-width: 20rem !important;
+  max-height: 20rem !important;
+  border-radius: 50% !important;
+}
+.CarouselCard-Description {
+  font-size: 1.1rem;
+}
+.CarouselCard-Title {
+  padding-top: 1rem;
+}
+.CarouselCard-Title,
+.CarouselCard-Description {
+  color: #fff;
+}

@@ -1,0 +1,45 @@
+.LearningWithLumiCard {
+  &-Container {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+  &-Image {
+    width: 20rem !important;
+    height: 20rem !important;
+  }
+  &-Description {
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #333;
+  }
+  &-Heading-Container {
+    text-align: left;
+  }
+  &-Body {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  &-Heading {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: #000;
+  }
+}
+.TypicalFaceCards-Container {
+  .swiper {
+    .swiper-pagination {
+      --swiper-theme-color: #fff;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+//React-Boostrap
+.FAQAccordion-Section-Container {
+  padding-top: 5rem;
+}
+.accordion-button {
+  font-size: 1.6rem;
+  padding: 1.5rem !important;
+}
+.FAQAccordion-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.FAQAccordion-heading {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.FAQAccordion-body {
+  font-size: 1.6rem;
+}

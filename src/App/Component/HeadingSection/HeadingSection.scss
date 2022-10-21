@@ -1,0 +1,25 @@
+.CarouselHeading {
+  display: flex;
+  justify-content: center;
+}
+.CarouselDescription {
+  display: inline-block;
+  font-size: 3.2rem;
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  &::after {
+    display: block;
+    content: "";
+    text-align: center;
+    width: 30%;
+    height: 0.8rem;
+    border-radius: 0.5rem;
+    background: #008c4f;
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    line-height: 3.6rem;
+    transform: translate(-50%, 2rem) !important;
+  }
+}

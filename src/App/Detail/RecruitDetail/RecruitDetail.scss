@@ -1,0 +1,75 @@
+.RecruitDetail-Container {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.RecruitDetail-Navigation {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.RecruitDetail-Navigation--home {
+  color: #008c4f;
+}
+.RecruitDetail-Description {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 8rem;
+}
+.RecruitDetail-Description--Heading {
+  color: #008c4f;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+.RecruitDetail-Description--item {
+  padding-top: 2rem;
+  gap: 1.5rem;
+}
+.RecruitDetail-Description--item p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.RecruitDetail-Description--item span svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+//RecruitDetail-Description--detail
+
+.RecruitDetail-Description--detail {
+  padding-top: 8rem;
+}
+.RecruitDetail-Description--detail div {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.RecruitDetail-Description--detail p {
+  font-size: 1.6rem;
+}
+
+//RecruitDetail-Description--Form
+.RecruitDetail-Description--Form {
+  background-color: #f5f5f5;
+  padding: 3.2rem;
+  border-radius: 5px;
+}
+.RecruitDetail-Description--Form-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-bottom: 1.2rem;
+}
+.form-label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  padding-bottom: 1.2rem;
+}
+.form-control {
+  font-size: 1.4rem;
+}

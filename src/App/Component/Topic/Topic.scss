@@ -1,0 +1,14 @@
+.Topic {
+  &-Container {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    input {
+      border: none !important;
+      &:focus-visible {
+        outline: none !important;
+      }
+    }
+  }
+}

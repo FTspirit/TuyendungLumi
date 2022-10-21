@@ -1,0 +1,92 @@
+h3 {
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+#section1 {
+  color: #fff;
+}
+.section {
+  height: 100vh !important;
+}
+.images5 {
+  background-image: url(../../Asset/image/cover8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(224, 220, 220, 0.101),
+      rgba(0, 0, 0, 0.589)
+    );
+    height: 50rem;
+  }
+}
+.images6 {
+  background-image: url(../../Asset/image/cover9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(224, 220, 220, 0.101),
+      rgba(0, 0, 0, 0.537)
+    );
+    height: 50rem;
+  }
+}
+.images7 {
+  background-image: url(../../Asset/image/cover9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.fp-section {
+  text-align: center;
+}
+.fp-watermark {
+  display: none !important;
+}
+.fp-watermark > a {
+  display: none !important;
+}
+.LUMIERCarousel-Heading {
+  z-index: 100;
+  position: fixed;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  color: #fff;
+  bottom: 15rem;
+  left: 15rem;
+  &::after {
+    display: block;
+    content: "";
+    text-align: center;
+    width: 100%;
+    height: 0.8rem;
+    background: #fff;
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    line-height: 3.6rem;
+    transform: translate(-50%, 2rem) !important;
+  }
+}

@@ -1,0 +1,12 @@
+.TrainingProcess {
+  &-Container {
+    padding-top: 10rem !important;
+  }
+  &-Row:last-child {
+    padding-top: 10rem;
+  }
+  &-Image {
+    width: 21rem;
+    height: 18rem;
+  }
+}

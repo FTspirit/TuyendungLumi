@@ -1,0 +1,22 @@
+.TrickCard {
+  &-Container {
+    border: none !important;
+    width: 32rem !important;
+  }
+  &-Image {
+  }
+  &-Heading {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+  }
+  &-Description {
+    text-align: justify;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+  }
+  &-Body {
+    padding: 0 !important;
+  }
+}

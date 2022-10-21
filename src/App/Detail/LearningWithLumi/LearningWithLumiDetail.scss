@@ -1,0 +1,51 @@
+.LearningWithLumi {
+  &-Container {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &-Navigation {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.6rem;
+    background-color: #e3e4e3;
+    border-radius: 1rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+  &-Description {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+  }
+  &-Heading {
+    h1 {
+      display: inline-block;
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: #1f1f1f;
+      line-height: 3.6rem;
+      position: relative;
+      &::after {
+        display: block;
+        content: "";
+        text-align: left;
+        width: 30%;
+        height: 0.8rem;
+        border-radius: 0.5rem;
+        background: #008c4f;
+        position: absolute;
+        bottom: 0rem;
+        left: 15%;
+        line-height: 3.6rem;
+        transform: translate(-50%, 2rem) !important;
+      }
+    }
+  }
+}

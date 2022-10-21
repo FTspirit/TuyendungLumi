@@ -1,0 +1,42 @@
+h3 {
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+#section1 {
+  color: #fff;
+}
+.section {
+  height: 100vh !important;
+}
+.imagesInternCarousel1 {
+  background-color: #e7ebf0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.imagesInternCarousel2 {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.imagesInternCarousel3 {
+  background-color: #1f1f1f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.fp-section {
+  text-align: center;
+}
+.fp-watermark {
+  display: none !important;
+}
+.fp-watermark > a {
+  display: none !important;
+}
