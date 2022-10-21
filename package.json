@@ -2,6 +2,7 @@
   "name": "tuyendunglumi",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://FTspirit.github.io/TuyendungLumi",
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.28",
     "@testing-library/jest-dom": "^5.16.5",
@@ -51,6 +52,7 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^2.0.7"
+    "babel-plugin-styled-components": "^2.0.7",
+    "gh-pages": "^4.0.0"
   }
 }
