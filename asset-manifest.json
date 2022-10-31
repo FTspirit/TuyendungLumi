@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/trangchu/static/css/main.a59c76d1.css",
-    "main.js": "/trangchu/static/js/main.942d589d.js",
-    "static/media/cover1.png": "/trangchu/static/media/cover1.73738b389dd7a3a46ddd.png",
-    "static/media/blogcover1.png": "/trangchu/static/media/blogcover1.680934e1603c646e8ddf.png",
-    "static/media/cover8.png": "/trangchu/static/media/cover8.2b0e4004ee519705c0fd.png",
-    "static/media/cover7.png": "/trangchu/static/media/cover7.ad09c321c11da8f116bf.png",
-    "static/media/cover9.png": "/trangchu/static/media/cover9.4302c1ac2834282a6f45.png",
-    "static/media/cover5.png": "/trangchu/static/media/cover5.10fd0e073d581c3ab72a.png",
-    "static/media/cover10.png": "/trangchu/static/media/cover10.75f74d82dd38f88b3ece.png",
-    "static/media/carouselmockup.png": "/trangchu/static/media/carouselmockup.74114671d31484edc1c8.png",
-    "static/media/carouselmockup2.png": "/trangchu/static/media/carouselmockup2.2dd70ecd34805f4114e7.png",
-    "static/media/cover11.png": "/trangchu/static/media/cover11.4f424c16890a5a04fb9e.png",
-    "static/media/carouselmockup1.png": "/trangchu/static/media/carouselmockup1.5ca9574c6d7be8cf5e9f.png",
-    "static/media/test6.jpeg": "/trangchu/static/media/test6.7d940f3cc3280ee0bbdf.jpeg",
-    "index.html": "/trangchu/index.html",
-    "main.a59c76d1.css.map": "/trangchu/static/css/main.a59c76d1.css.map",
-    "main.942d589d.js.map": "/trangchu/static/js/main.942d589d.js.map"
+    "main.css": "/TuyendungLumi/static/css/main.5a218d79.css",
+    "main.js": "/TuyendungLumi/static/js/main.c1cf0148.js",
+    "static/media/cover1.png": "/TuyendungLumi/static/media/cover1.73738b389dd7a3a46ddd.png",
+    "static/media/blogcover1.png": "/TuyendungLumi/static/media/blogcover1.680934e1603c646e8ddf.png",
+    "static/media/cover8.png": "/TuyendungLumi/static/media/cover8.2b0e4004ee519705c0fd.png",
+    "static/media/cover7.png": "/TuyendungLumi/static/media/cover7.ad09c321c11da8f116bf.png",
+    "static/media/cover9.png": "/TuyendungLumi/static/media/cover9.4302c1ac2834282a6f45.png",
+    "static/media/cover5.png": "/TuyendungLumi/static/media/cover5.10fd0e073d581c3ab72a.png",
+    "static/media/cover10.png": "/TuyendungLumi/static/media/cover10.75f74d82dd38f88b3ece.png",
+    "static/media/carouselmockup.png": "/TuyendungLumi/static/media/carouselmockup.74114671d31484edc1c8.png",
+    "static/media/carouselmockup2.png": "/TuyendungLumi/static/media/carouselmockup2.2dd70ecd34805f4114e7.png",
+    "static/media/cover11.png": "/TuyendungLumi/static/media/cover11.4f424c16890a5a04fb9e.png",
+    "static/media/carouselmockup1.png": "/TuyendungLumi/static/media/carouselmockup1.5ca9574c6d7be8cf5e9f.png",
+    "static/media/test6.jpeg": "/TuyendungLumi/static/media/test6.7d940f3cc3280ee0bbdf.jpeg",
+    "index.html": "/TuyendungLumi/index.html",
+    "main.5a218d79.css.map": "/TuyendungLumi/static/css/main.5a218d79.css.map",
+    "main.c1cf0148.js.map": "/TuyendungLumi/static/js/main.c1cf0148.js.map"
   },
   "entrypoints": [
-    "static/css/main.a59c76d1.css",
-    "static/js/main.942d589d.js"
+    "static/css/main.5a218d79.css",
+    "static/js/main.c1cf0148.js"
   ]
 }
