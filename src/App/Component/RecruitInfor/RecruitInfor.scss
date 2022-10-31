@@ -1,0 +1,56 @@
+.RecruitInfor {
+  &-Container {
+    margin-top: 5rem;
+  }
+  &-Search {
+    padding: 2rem;
+    background-color: rgba(227, 228, 227, 0.5);
+    .RecruitInfor-Button {
+      .row {
+        .col {
+          button {
+            margin: 1rem;
+          }
+        }
+      }
+    }
+  }
+  &-Form {
+    display: flex;
+    gap: 5rem;
+    .form-check,
+    .form-select {
+      font-size: 1.5rem;
+      border: none;
+    }
+    .form-check {
+      width: 30rem;
+    }
+  }
+  &-FormCheck {
+    display: flex;
+  }
+  &-Button {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3.2rem;
+    .btn {
+      --bs-btn-font-size: 1.5rem;
+      background-color: #fff;
+      border-color: #fff;
+      color: #1f1f1f;
+      font-weight: 500;
+    }
+    button {
+      transition: all 0.3 ease-in-out;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.RecruitScroll {
+  overflow: scroll;
+  height: 40rem;
+  margin-top: 2rem;
+}

@@ -1,11 +1,13 @@
 .TrickCard {
   &-Container {
     border: none !important;
-    width: 32rem !important;
   }
   &-Image {
+    object-fit: cover;
   }
+
   &-Heading {
+    padding: 1.5rem 0rem;
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.8rem;
@@ -18,5 +20,12 @@
   }
   &-Body {
     padding: 0 !important;
+  }
+  &-Date {
+    padding-top: 2rem;
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #a4a6a8;
   }
 }

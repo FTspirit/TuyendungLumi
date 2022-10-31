@@ -96,3 +96,27 @@ p {
 .pdt-32 {
   padding-top: 3.2rem;
 }
+.btn:focus {
+  box-shadow: none !important;
+}
+@mixin buttonGlobal {
+  --bs-btn-border-color: transparent !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+}

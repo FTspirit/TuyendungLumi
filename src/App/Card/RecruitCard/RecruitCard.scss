@@ -1,0 +1,55 @@
+.RecruitCard {
+  &-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border: 1px solid #a4a6a8;
+    border-radius: 1rem;
+    margin: 3rem 0;
+    .btn {
+      --bs-btn-font-size: 1.5rem;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+  }
+  &-ButtonGroup {
+    display: flex;
+    gap: 3rem;
+  }
+  &-CopyButton {
+    img {
+      padding-right: 1rem;
+    }
+    background-color: #fff;
+    border-color: #333;
+    color: #1f1f1f;
+  }
+  &-CopyButton:focus {
+    background-color: #fff;
+    color: #333;
+  }
+  &-CopyButton:hover {
+    background-color: #fff;
+    border-color: #333;
+    color: #1f1f1f;
+  }
+  &-ApplyButton {
+    background-color: #008c4f;
+    border-color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.6rem;
+    transition: transform 0.3 ease-in-out;
+    transform: scale(1);
+  }
+  &-ApplyButton:hover {
+    background-color: #007e47 !important;
+  }
+  &-ApplyButton:active {
+    transform: scale(0.9);
+  }
+}

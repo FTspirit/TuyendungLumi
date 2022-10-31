@@ -15,7 +15,7 @@ const HomeCarousel = () => (
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
-          <div className="section images1">
+          <div className="section">
             <HomeImageCarousel />
           </div>
           <div className="section images3">

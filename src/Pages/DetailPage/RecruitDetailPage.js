@@ -1,9 +1,11 @@
 import RecruitDetail from "../../App/Detail/RecruitDetail";
-function RecruitDetailPage() {
+
+function RecruitDetailPage({ data }) {
+  console.log(data);
   return (
     <>
-      <RecruitDetail />
+      <RecruitDetail props={data} />
     </>
   );
 }
-export default RecruitDetail;
+export default RecruitDetailPage;

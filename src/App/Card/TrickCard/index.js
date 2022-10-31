@@ -4,8 +4,8 @@ import Card from "react-bootstrap/Card";
 // Import SCSS
 import "./TrickCards.scss";
 // Import Mockup Image
-import Test from "../../../Asset/image/carouselmockup.png";
-function TrickCard({ image, title, description }) {
+import Test from "../../../Asset/image/test6.jpeg";
+function TrickCard({ image, title, description, style }) {
   return (
     // <Card>
     //   <Card.Img variant="top" src={image} />
@@ -14,8 +14,13 @@ function TrickCard({ image, title, description }) {
     //     <Card.Text>{description}</Card.Text>
     //   </Card.Body>
     // </Card>
-    <Card className="TrickCard-Container">
-      <Card.Img variant="top" src={Test} className="TrickCard-Image" />
+    <Card className="TrickCard-Container ">
+      <Card.Img
+        variant="top"
+        src={Test}
+        className="TrickCard-Image"
+        style={style}
+      />
       <Card.Body className="TrickCard-Body">
         <Card.Title className="TrickCard-Heading">Tiêu đề chính</Card.Title>
         <Card.Text className="TrickCard-Description">
@@ -23,6 +28,9 @@ function TrickCard({ image, title, description }) {
           mở rộng của CSS và được biên dịch thành cú pháp CSS giúp bạn viết CSS
           nhanh hơn và có cấu trúc rõ ràng hơn. CSS Preprocessor có thể giúp bạn
           tiết kiệm thời gian viết CSS, dễ dàng bảo trì và phát triển CSS.
+        </Card.Text>
+        <Card.Text className="TrickCard-Date">
+          tên tác giả | Ngày / tháng / năm
         </Card.Text>
       </Card.Body>
     </Card>

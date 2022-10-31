@@ -1,40 +1,18 @@
 import Container from "react-bootstrap/Container";
-
-import { Axios } from "axios";
 //import Icon
 import { BsChevronDoubleRight } from "react-icons/bs";
 
-// import card
-import LearningWithLumiCard from "../../Card/LearningWithLumiCard";
-
 // import component
-import Topic from "../../Component/Topic";
+import HeadingSection from "../../Component/HeadingSection";
 
 // import scss
 import "./LearningWithLumiDetail.scss";
-import { useState } from "react";
+
+import Post from "../../Post";
 function LearningWithLumiDetail(props) {
-  const [data, setData] = useState({
-    formName: "",
-    formEmail: "",
-    formTel: "",
-    formCom: "",
-  });
-  function handleInput(e) {
-    const newdata = { ...data };
-    newdata[e.target.id] = e.target.value;
-    setData(newdata);
-    console.log(newdata);
-  }
-  function Submit(e) {
-    e.preventDefault();
-    Axios.post({
-      name: data.formName,
-      email: data.formEmail,
-      tel: data.formTel,
-      company: data.formCom,
-    });
-  }
+  const LearningWithLumiDetailHeadingColor = {
+    color: "#333",
+  };
   return (
     <>
       <Container className="LearningWithLumi-Container">
@@ -45,22 +23,14 @@ function LearningWithLumiDetail(props) {
           <BsChevronDoubleRight />
           <p>Một công việc nào đó</p>
         </div>
-        <div className="LearningWithLumi-Heading">
+        {/* <div className="LearningWithLumi-Heading">
           <h1>Learning with LUMI</h1>
-        </div>
-
-        <div className="LearningWithLumi-Description">
-          <div className="LearningWithLumi-ListCard">
-            <LearningWithLumiCard />
-            <LearningWithLumiCard />
-            <LearningWithLumiCard />
-            <LearningWithLumiCard />
-          </div>
-
-          <div className="LearningWithLumi-Topic">
-            <Topic />
-          </div>
-        </div>
+        </div> */}
+        <HeadingSection
+          description={`Learning with LUMI`}
+          style={LearningWithLumiDetailHeadingColor}
+        />
+        <Post />
       </Container>
     </>
   );

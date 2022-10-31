@@ -19,7 +19,7 @@ import "./TypicalFaceCards.scss";
 import { Pagination } from "swiper";
 function TypicalFaceCards() {
   const TypicalFaceStyle = {
-    color: "#fff",
+    color: "#333",
   };
   return (
     <>

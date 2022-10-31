@@ -42,7 +42,7 @@ function Tricks() {
             className="myTricksSwiper"
             slidesPerView={3}
             centeredSlides={true}
-            spaceBetween={50}
+            spaceBetween={100}
           >
             <SwiperSlide>
               <TrickCard />

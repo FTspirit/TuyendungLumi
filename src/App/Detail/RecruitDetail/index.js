@@ -2,6 +2,8 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Axios } from "axios";
+import parse from "html-react-parser";
+import { Link } from "react-router-dom";
 //import Icon
 import { BsChevronDoubleRight } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
@@ -12,7 +14,8 @@ import { VscSymbolStructure } from "react-icons/vsc";
 
 import "./RecruitDetail.scss";
 import { useState } from "react";
-function RecruitDetail(props) {
+function RecruitDetail({ props }) {
+  console.log(props);
   const [data, setData] = useState({
     formName: "",
     formEmail: "",
@@ -38,17 +41,17 @@ function RecruitDetail(props) {
     <>
       <Container className="RecruitDetail-Container">
         <div className="RecruitDetail-Navigation">
-          <a>
+          <Link to="/tuyendung">
             <p className="RecruitDetail-Navigation--home">Tuyển dụng</p>
-          </a>
+          </Link>
           <BsChevronDoubleRight />
-          <p>Một công việc nào đó</p>
+          <p>{props.name}</p>
         </div>
         <div className="RecruitDetail-Description">
           <div className="RecruitDetail-Description--Jobdes">
             <div>
               <h1 className="RecruitDetail-Description--Heading">
-                Tuyển dụng 01 Trade Marketing
+                {props.name}
               </h1>
             </div>
             <div>
@@ -57,7 +60,7 @@ function RecruitDetail(props) {
                   <MdLocationOn />
                 </span>
                 <p className="RecruitDetail-Description--items-heading">
-                  Nơi làm việc: 38 Đỗ Đức Dục, Mễ Trì, Nam Từ Liêm, Hà Nội
+                  Nơi làm việc: <span>{props.diadiem}</span>
                 </p>
               </div>
               <div className="d-flex align-items-center RecruitDetail-Description--item">
@@ -65,7 +68,7 @@ function RecruitDetail(props) {
                   <AiOutlineCalendar />
                 </span>
                 <p className="RecruitDetail-Description--items-heading">
-                  Thời gian: Từ Thứ 2 - Thứ 6, Sáng thứ 7
+                  Thời gian: Từ thứ 2 - thứ 6, Sáng thứ 7
                 </p>
               </div>
               <div className="d-flex align-items-center RecruitDetail-Description--item">
@@ -73,7 +76,7 @@ function RecruitDetail(props) {
                   <BsFillPersonFill />
                 </span>
                 <p className="RecruitDetail-Description--items-heading">
-                  Số lượng: 01
+                  Số lượng: <span>{props.soluong}</span>
                 </p>
               </div>
               <div className="d-flex align-items-center RecruitDetail-Description--item">
@@ -81,7 +84,7 @@ function RecruitDetail(props) {
                   <MdPayment />
                 </span>
                 <p className="RecruitDetail-Description--items-heading">
-                  Mức lương: Thỏa thuận
+                  Mức lương: <span>{props.mucluong}</span>
                 </p>
               </div>
               <div className="d-flex align-items-center RecruitDetail-Description--item">
@@ -89,47 +92,17 @@ function RecruitDetail(props) {
                   <VscSymbolStructure />
                 </span>
                 <p className="RecruitDetail-Description--items-heading">
-                  Phòng/ban: Phòng Marketing
+                  Phòng/ban: <span>{props.phongban}</span>
                 </p>
               </div>
             </div>
             <div className="RecruitDetail-Description--detail">
               <div>Mô tả công việc:</div>
-              <p>
-                Nhận các yêu cầu tư vấn sự kiện, tư vấn truyền thông, order
-                thiết kế từ nhà phân phối về nhận diện thương hiệu (Trưng bày
-                sản phẩm, chương trình khuyến mãi, tổ chức sự kiện, tài liệu bán
-                hàng… Là đầu mối gửi các tài liệu bán hàng POSM, tư liệu truyền
-                thông cho NPP, phòng kinh doanh (tư liệu kinh doanh) Thu thập
-                thông tin thị trường về sản phẩm, dịch vụ của đối thủ chính yếu,
-                đề xuất chương trình bán hàng, khuyến mãi cho khách hàng Đề xuất
-                chương trình thi đua theo tháng, quý, năm, đề xuất hoạt động
-                thúc đẩy kinh doanh của doanh nghiệp. Tổ chức sự kiện, hội nghị
-                khách hàng (nếu có) Tìm kiếm đối tác cho các hoạt động của MKT,
-                xử lý hồ sơ, hợp đồng giấy tờ giữa MKT với các đơn vị đối tác
-                Lên kế hoạch seeding và điều phối nhân sự, kiểm soát hiệu quả
-                seeding cho mỗi chiến dịch, sự kiện Phối hợp cùng content lên
-                order thiết kế ấn phẩm marketing, POSM, Voucher,… Update các
-                thông tin lên website khi có thay đổi về NPP hay sản phẩm mới
-                Support sự kiện của phòng MKT và các hoạt động nội bộ Quản lý
-                kho, chủ động in ấn các tài liệu phục vụ kinh doanh khi cần Yêu
-                cầu Có kinh nghiệm làm trade marketing là một lợi thế. Ưu tiên
-                các bạn ham học hỏi. Thành thạo tin học văn phòng (Microsoft
-                Word, Excel, PowerPoint,…). Có hiểu biết sâu rộng về tiếp thị
-                sản phẩm và nghiên cứu hành vi khách hàng. Có khả năng thu thập
-                và xử lý khối lượng dữ liệu thông tin lớn. Có khả năng làm việc
-                độc lập và kỹ năng làm việc nhóm. Quyết đoán và có kỹ năng giải
-                quyết vấn đề tốt. Kỹ năng đàm phán, thương lượng tốt. Khả năng
-                thích nghi với mọi môi trường làm việc. Kỹ năng sử dụng thành
-                thạo các công cụ phục vụ cho công việc Hiểu cơ bản về công
-                nghiệp in ấn Kỹ năng tin học văn phòng cơ bản. Quyền lợi: Thu
-                nhập: Lương net: thoả thuận Phụ cấp ăn trưa: 700.000 Vnđ Làm
-                việc từ T2- Sáng T7 BHYT, BHXH, nghỉ phép theo quy định Bộ luật
-                Lao động. Thưởng Lễ, Tết, Tháng lương 13 Du lịch hằng năm 4 lần
-                theo quy định công ty Quyền lợi nâng cao: Khám sức khỏe định kỳ
-                1 lần / năm, cấp chăn gối văn phòng, miễn phí trà, cà phê, hoa
-                quả…
-              </p>
+              <p>{parse(`${props.motacongviec}`)}</p>
+              <div>Yêu cầu ứng viên:</div>
+              <p>{parse(`${props.yeucauungvien}`)}</p>
+              <div>Mô tả công việc:</div>
+              <p>{parse(`${props.quyenloi}`)}</p>
             </div>
           </div>
 
@@ -218,9 +191,7 @@ function RecruitDetail(props) {
                 <Form.Control as="textarea" rows={3} />
               </Form.Group>
             </Form>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <Button type="submit">Nộp đơn ứng tuyển</Button>
           </div>
         </div>
       </Container>
