@@ -14,7 +14,7 @@ export default function RoutePage() {
   return (
     <Routes>
       <Route path="/" element={<Home />}>
-        <Route path="/trangchu" element={<Home />} />
+        <Route path="/TuyendungLumi" element={<Home />} />
       </Route>
       <Route path="/thuctapsinh" element={<Intern />} />
       <Route path="/tuyendung" element={<Recruit />} />

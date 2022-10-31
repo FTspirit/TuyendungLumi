@@ -12,6 +12,7 @@ const HomeCarousel = () => (
     //fullpage options
     scrollingSpeed={1000} /* Options here */
     responsiveHeight={600}
+    allowTouchMove={false}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>

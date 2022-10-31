@@ -8,7 +8,6 @@ import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Button } from "react-bootstrap";
-import RecruitPagination from "../../CardList/RecruitPagination";
 
 import data from "../../../Asset/data/JD.json";
 function RecruitInfor() {
