@@ -1,7 +1,17 @@
+import Navigation from "../../App/Navbar";
 import LearningWithLumiDetail from "../../App/Detail/LearningWithLumi";
 export default function LearningLumiPage() {
+  const bgcolor = {
+    transperant: {
+      backgroundColor: "transparent",
+    },
+    color: {
+      backgroundColor: "#fff",
+    },
+  };
   return (
     <>
+      <Navigation style={bgcolor.color} />
       <LearningWithLumiDetail />
     </>
   );

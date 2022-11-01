@@ -40,3 +40,15 @@ h3 {
 .fp-watermark > a {
   display: none !important;
 }
+.recruitdetailbutton {
+  border: none;
+  font-size: 2.5rem;
+  background-color: #008c4f;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin-top: 5rem;
+}
+.recruitdetailbutton:focus {
+  outline: none;
+}

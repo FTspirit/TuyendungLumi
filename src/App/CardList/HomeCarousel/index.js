@@ -3,8 +3,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Images
-import test1 from "../../../Asset/image/cover1.png";
-import test2 from "../../../Asset/image/cover10.png";
+import cover1 from "../../../Asset/image/cover10.png";
+import cover2 from "../../../Asset/image/cover19.png";
+import cover3 from "../../../Asset/image/cover18.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -43,13 +44,13 @@ function HomeImageCarousel() {
         spaceBetween={0}
       >
         <SwiperSlide>
-          <img src={test2} alt="Home carousel 1" />
+          <img src={cover1} alt="Home carousel 1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={test1} alt="Home carousel 1" />
+          <img src={cover2} alt="Home carousel 1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={test2} alt="Home carousel 1" />
+          <img src={cover3} alt="Home carousel 1" />
         </SwiperSlide>
       </Swiper>
     </div>

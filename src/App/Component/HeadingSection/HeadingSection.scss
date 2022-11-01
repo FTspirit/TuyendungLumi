@@ -1,6 +1,7 @@
 .CarouselHeading {
   display: flex;
   justify-content: center;
+  user-select: none;
 }
 .CarouselDescription {
   display: inline-block;

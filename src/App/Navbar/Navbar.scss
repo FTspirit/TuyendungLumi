@@ -1,11 +1,18 @@
 .navbar {
   padding-top: 0rem !important;
   padding-bottom: 0rem !important;
-  height: 8rem;
 }
 @media only screen and (min-width: 992px) {
   .navbarContainter {
     display: flex !important;
+    height: 8rem;
+    .navbarLogo {
+      user-select: none; /* supported by Chrome and Opera */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+    }
   }
   .offcanvas {
     justify-self: center !important;
@@ -20,6 +27,11 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
     position: relative;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
     &:hover {
       &::after {
         display: block;

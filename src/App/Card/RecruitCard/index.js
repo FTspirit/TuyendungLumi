@@ -5,7 +5,6 @@ import "./RecruitCard.scss";
 
 import copyicon from "../../../Asset/image/copyicon.png";
 function RecruitCard({ heading, link }) {
-  console.log(link);
   return (
     <>
       <div className="RecruitCard-Container">

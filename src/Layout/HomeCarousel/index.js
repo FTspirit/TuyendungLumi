@@ -5,14 +5,13 @@ import "./HomeCarousel.scss";
 import HomeImageCarousel from "../../App/CardList/HomeCarousel";
 import VideoYoutube from "../../App/Component/VideoYoutube";
 import CarouselRoadmap from "../../App/CardList/Roadmap";
-import Footer from "../../App/Footer";
+import Footer from "../../App/Footer/Footer";
 
 const HomeCarousel = () => (
   <ReactFullpage
     //fullpage options
     scrollingSpeed={1000} /* Options here */
-    responsiveHeight={600}
-    allowTouchMove={false}
+    responsiveHeight={400}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>

@@ -4,8 +4,8 @@ import Card from "react-bootstrap/Card";
 // Import SCSS
 import "./TrickCards.scss";
 // Import Mockup Image
-import Test from "../../../Asset/image/test6.jpeg";
-function TrickCard({ image, title, description, style }) {
+import Test from "../../../Asset/image/test6.png";
+function TrickCard({ image, tiltle, description, style, author, time }) {
   return (
     // <Card>
     //   <Card.Img variant="top" src={image} />
@@ -22,15 +22,10 @@ function TrickCard({ image, title, description, style }) {
         style={style}
       />
       <Card.Body className="TrickCard-Body">
-        <Card.Title className="TrickCard-Heading">Tiêu đề chính</Card.Title>
-        <Card.Text className="TrickCard-Description">
-          CSS Preprocessors là ngôn ngữ tiền xử lý CSS. Là một ngôn ngữ kịch bản
-          mở rộng của CSS và được biên dịch thành cú pháp CSS giúp bạn viết CSS
-          nhanh hơn và có cấu trúc rõ ràng hơn. CSS Preprocessor có thể giúp bạn
-          tiết kiệm thời gian viết CSS, dễ dàng bảo trì và phát triển CSS.
-        </Card.Text>
+        <Card.Title className="TrickCard-Heading">{tiltle}</Card.Title>
+        <Card.Text className="TrickCard-Description">{description}</Card.Text>
         <Card.Text className="TrickCard-Date">
-          tên tác giả | Ngày / tháng / năm
+          <span>{author}</span> | <span>{time}</span>
         </Card.Text>
       </Card.Body>
     </Card>

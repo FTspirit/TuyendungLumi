@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { Axios } from "axios";
+import axios from "axios";
 import parse from "html-react-parser";
 import { Link } from "react-router-dom";
 //import Icon
@@ -13,30 +13,98 @@ import { MdPayment } from "react-icons/md";
 import { VscSymbolStructure } from "react-icons/vsc";
 
 import "./RecruitDetail.scss";
-import { useState } from "react";
+import { useState, useRef } from "react";
+
 function RecruitDetail({ props }) {
-  console.log(props);
-  const [data, setData] = useState({
-    formName: "",
-    formEmail: "",
-    formTel: "",
-    formCom: "",
-  });
-  function handleInput(e) {
-    const newdata = { ...data };
-    newdata[e.target.id] = e.target.value;
-    setData(newdata);
-    console.log(newdata);
-  }
-  function Submit(e) {
-    e.preventDefault();
-    Axios.post({
-      name: data.formName,
-      email: data.formEmail,
-      tel: data.formTel,
-      company: data.formCom,
-    });
-  }
+  const form = useRef(null);
+  //   const [data, setData] = useState({
+  //     formName: "",
+  //     formEmail: "",
+  //     formTel: "",
+  //     formCom: "",
+  //   });
+  //   function handleInput(e) {
+  //     const newdata = { ...data };
+  //     newdata[e.target.id] = e.target.value;
+  //     setData(newdata);
+  //     console.log(newdata);
+  //   }
+  //   function Submit(e) {
+  //     console.log(e);
+  //     e.preventDefault();
+  //     Axios.post(
+  //       "10.10.50.81/api/cv/submit",
+  //       {
+  //         name: data.formName,
+  //         email: data.formEmail,
+  //         tel: data.formTel,
+  //         company: data.formCom,
+  //       },
+  //       {
+  //         headers: {
+  //           "Content-Type": "multipart/form-data",
+  //         },
+  //       }
+  //     )
+  //       .then(function (response) {
+  //         console.log(response);
+  //       })
+  //       .catch(function (error) {
+  //         console.log(error);
+  //       });
+  //   }
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobileNumber, setMobileNumber] = useState("");
+  console.log(selectedFile);
+  console.log(form.current);
+  let handleSubmit = async (event) => {
+    //   e.preventDefault();
+    //   try {
+    //     let res = await fetch("10.10.50.81/api/cv/submit", {
+    //       method: "POST",
+    //       body: JSON.stringify({
+    //         cv_file: selectedFile,
+    //         fullname: name,
+    //         email: email,
+    //         mobile_phone: mobileNumber,
+    //       }),
+    //     });
+    //     let resJson = await res.json();
+    //     if (res.status === 200) {
+    //       setName("");
+    //       setEmail("");
+    //       setMessage("User created successfully");
+    //     } else {
+    //       setMessage("Some error occured");
+    //     }
+    //   } catch (err) {
+    //     console.log(err);
+    //   }
+
+    event.preventDefault();
+    const url = "10.10.50.81/api/cv/submit";
+    const formData = new FormData();
+    formData.append("cv_file", selectedFile);
+    // formData.append("fileName", selectedFile.name);
+    // formData.append("fullname", name);
+    // formData.append("email", email);
+    // formData.append("mobile_phone", mobileNumber);
+    console.log(formData);
+    const config = {
+      headers: {
+        "content-type": "multipart/form-data",
+      },
+    };
+    axios
+      .post(url, formData, config)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  };
   return (
     <>
       <Container className="RecruitDetail-Container">
@@ -110,10 +178,22 @@ function RecruitDetail({ props }) {
             <p className="RecruitDetail-Description--Form-heading">
               ĐƠN ỨNG TUYỂN
             </p>
-            <Form>
+            <Form
+              action="10.10.50.81/api/cv/submit"
+              method="POST"
+              encType="multipart/form-data"
+              onSubmit={handleSubmit}
+              ref={form}
+            >
               <Form.Group className="mb-3">
                 <Form.Label for="formCV">Tải lên CV của bạn</Form.Label>
-                <Form.Control type="file" required id="formCV" />
+                <Form.Control
+                  type="file"
+                  required
+                  id="formCV"
+                  onChange={(e) => setSelectedFile(e.target.files[0])}
+                  name="cv-file"
+                />
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label for="formName">Họ &amp; tên bạn</Form.Label>
@@ -122,8 +202,9 @@ function RecruitDetail({ props }) {
                   placeholder="Họ &amp; tên bạn"
                   required
                   id="formName"
-                  value={data.formName}
-                  onChange={handleInput}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  nmame="fullname"
                 />
               </Form.Group>
               <Form.Group className="mb-3">
@@ -133,8 +214,9 @@ function RecruitDetail({ props }) {
                   placeholder="Địa chỉ email"
                   required
                   id="formEmail"
-                  value={data.formEmail}
-                  onChange={handleInput}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  name="email"
                 />
               </Form.Group>
               <Form.Group className="mb-3">
@@ -144,19 +226,9 @@ function RecruitDetail({ props }) {
                   placeholder="Số điện thoại"
                   required
                   id="formTel"
-                  value={data.formTel}
-                  onChange={handleInput}
-                />
-              </Form.Group>
-              <Form.Group className="mb-3">
-                <Form.Label for="formCom">Công ty hiện tại</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Cy hiện tại"
-                  required
-                  id="formCom"
-                  value={data.formCom}
-                  onChange={handleInput}
+                  value={mobileNumber}
+                  onChange={(e) => setMobileNumber(e.target.value)}
+                  name="mobile_phone"
                 />
               </Form.Group>
 
@@ -190,8 +262,8 @@ function RecruitDetail({ props }) {
                 <Form.Label>Thông tin thêm</Form.Label>
                 <Form.Control as="textarea" rows={3} />
               </Form.Group>
+              <Button type="submit">Nộp đơn ứng tuyển</Button>
             </Form>
-            <Button type="submit">Nộp đơn ứng tuyển</Button>
           </div>
         </div>
       </Container>
@@ -199,3 +271,15 @@ function RecruitDetail({ props }) {
   );
 }
 export default RecruitDetail;
+
+// const formData = new FormData();
+// formData.append("name", "hello world");
+
+// axios({
+//     url: 'postform',
+//     method: "POST",
+//     data: formData,
+//     headers: {
+//       'Content-Type': 'multipart/form-data'
+//     }
+// })

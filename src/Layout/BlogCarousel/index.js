@@ -6,7 +6,7 @@ import "./BlogCarousel.scss";
 // Import Component
 import HeadingSection from "../../App/Component/HeadingSection";
 import Post from "../../App/Post";
-import Footer from "../../App/Footer";
+import Footer from "../../App/Footer/FooterCarousel";
 const colorHeading = {
   color: "#333",
 };
@@ -22,6 +22,7 @@ function BlogCarousel() {
           style={colorHeading}
         />
         <Post />
+        <Footer />
       </div>
     </>
   );

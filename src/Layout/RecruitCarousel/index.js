@@ -9,7 +9,6 @@ const RecruitCarousel = () => (
   <ReactFullpage
     //fullpage options
     scrollingSpeed={1000} /* Options here */
-    responsiveHeight={600}
     normalScrollElements={".RecruitScroll"}
     render={({ state, fullpageApi }) => {
       return (
@@ -20,6 +19,12 @@ const RecruitCarousel = () => (
           </div>
           <div className="section">
             <RecruitmentProcess />
+            <button
+              className="recruitdetailbutton"
+              onClick={() => fullpageApi.moveSectionDown()}
+            >
+              Xem chi tiết
+            </button>
           </div>
           <div className="section">
             <RecruitmentTextInfor />

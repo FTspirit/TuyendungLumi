@@ -6,10 +6,15 @@ import ErrorPage from "../Pages/errorPage";
 import LumiLife from "../Pages/MainPage/lumilife";
 import Blog from "../Pages/MainPage/blog";
 import data from "../Asset/data/JD.json";
+import TricksDetails from "../App/Detail/TricksDetails/TrickDetail1";
+import TricksDetails2 from "../App/Detail/TricksDetails/TrickDetail2";
+import TricksDetails3 from "../App/Detail/TricksDetails/TrickDetail3";
+import TricksDetails4 from "../App/Detail/TricksDetails/TrickDetail1 copy 3";
 
 // Import detail component
 import LearningLumiPage from "../Pages/DetailPage/LearningLumiPage";
 import RecruitDetailPage from "../Pages/DetailPage/RecruitDetailPage";
+import TrickCardsDetail from "../App/Detail/TrickCardsDetail";
 export default function RoutePage() {
   return (
     <Routes>
@@ -17,6 +22,11 @@ export default function RoutePage() {
         <Route path="/TuyendungLumi" element={<Home />} />
       </Route>
       <Route path="/thuctapsinh" element={<Intern />} />
+      <Route path="/thuctapsinh/xemthem" element={<TrickCardsDetail />} />
+      <Route path="/thuctapsinh/detail1" element={<TricksDetails />} />
+      <Route path="/thuctapsinh/detail2" element={<TricksDetails2 />} />
+      <Route path="/thuctapsinh/detail3" element={<TricksDetails3 />} />
+      <Route path="/thuctapsinh/detail4" element={<TricksDetails4 />} />
       <Route path="/tuyendung" element={<Recruit />} />
       <Route path="/tuyendung/detail" element={<RecruitDetailPage />} />
       {data.jobs.map((item) => (

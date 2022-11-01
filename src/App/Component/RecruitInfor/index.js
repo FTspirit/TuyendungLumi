@@ -11,14 +11,12 @@ import { Button } from "react-bootstrap";
 
 import data from "../../../Asset/data/JD.json";
 function RecruitInfor() {
-  console.log(data);
   const RecruitInforStyle = {
     color: "#333",
   };
   const uniqueTag = [...new Set(data.jobs.map((job) => job.tag))];
   const uniqueLocation = [...new Set(data.jobs.map((job) => job.diadiem))];
   const uniqueDepartment = [...new Set(data.jobs.map((job) => job.phongban))];
-  console.log(uniqueTag);
   return (
     <>
       <div>

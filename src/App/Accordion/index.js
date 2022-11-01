@@ -1,7 +1,7 @@
 import Accordion from "react-bootstrap/Accordion";
 import Container from "react-bootstrap/Container";
 import HeadingSection from "../Component/HeadingSection";
-import Footer from "../Footer";
+import Footer from "../Footer/Footer";
 import "./Accordion.scss";
 
 function FAQAccordion() {

@@ -2,6 +2,7 @@ import React from "react";
 import "./LUMIERCarousel.scss";
 import Post from "../../App/Post";
 import { useEffect } from "react";
+import Footer from "../../App/Footer/FooterCarousel";
 // const LUMIERCarousel = () => (
 //   <ReactFullpage
 //     //fullpage options
@@ -38,6 +39,7 @@ function LUMIERCarousel() {
     <>
       <div className="section images5" />
       <Post />
+      <Footer />
     </>
   );
 }

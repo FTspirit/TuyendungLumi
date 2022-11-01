@@ -1,29 +1,23 @@
 import { Container } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import LogoLumi from "../../Asset/image/logoLumi.png";
 import "./Navbar.scss";
 
-function Navigation() {
+function Navigation({ style }) {
   return (
     <Navbar
       collapseOnSelect
       expand="lg"
-      bg="transparent"
       className="navbar"
       fixed="top"
+      style={style}
     >
       <Container fluid className="navbarContainter">
         <Navbar.Brand className="navbarLogo">
-          <NavLink
-            as={Link}
-            to="/"
-            className="navbar__brand"
-            key="Home"
-            eventKey="Home"
-          >
+          <NavLink to="/" className="navbar__brand" key="Home" eventKey="Home">
             <img src={LogoLumi} alt="logo" className="lumiLogo" />
           </NavLink>
         </Navbar.Brand>
@@ -37,7 +31,6 @@ function Navigation() {
           <Offcanvas.Body>
             <Nav className="justify-content-center">
               <NavLink
-                as={Link}
                 to="/tuyendung"
                 className={`navbar__link`}
                 key="Recruit"
@@ -46,7 +39,6 @@ function Navigation() {
                 Tuyển dụng
               </NavLink>
               <NavLink
-                as={Link}
                 to="/thuctapsinh"
                 className={`navbar__link`}
                 key="Intern"
@@ -55,7 +47,6 @@ function Navigation() {
                 Thực tập sinh
               </NavLink>
               <NavLink
-                as={Link}
                 to="/doisong"
                 className={`navbar__link`}
                 key="LumiLife"
@@ -64,7 +55,6 @@ function Navigation() {
                 Đời sống LUMIER
               </NavLink>
               <NavLink
-                as={Link}
                 to="/blog"
                 className={`navbar__link`}
                 key="Blog"

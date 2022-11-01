@@ -5,12 +5,14 @@ import ReactFullpage from "@fullpage/react-fullpage";
 
 // Import scss
 import "./InternCarousel.scss";
+import RecruitRoadmapImg from "../../Asset/image/cover13.png";
 
 // Import Component
-import Footer from "../../App/Footer";
+import Footer from "../../App/Footer/Footer";
 import TrainingProcess from "../../App/Component/TrainingProcess";
 import Tricks from "../../App/CardList/Tricks";
 import TypicalFaceCards from "../../App/CardList/TypicalFaceCards";
+import TrainingProcessDetail from "../../App/Component/TrainingProcessDetail";
 
 class ScrollToTopOnMount extends Component {
   componentDidMount(prevProps) {
@@ -25,7 +27,7 @@ const InternCarousel = () => (
   <ReactFullpage
     //fullpage options
     scrollingSpeed={1000} /* Options here */
-    responsiveHeight={600}
+    normalScrollElements={".TrainingProcessDetail"}
     render={({ state, fullpageApi }) => {
       return (
         <>
@@ -34,11 +36,21 @@ const InternCarousel = () => (
             <div className="section imagesInternCarousel1">
               <TypicalFaceCards />
             </div>
+            <div
+              className="section imagesInternCarousel2"
+              onClick={() => fullpageApi.moveSectionDown()}
+            >
+              <img
+                src={RecruitRoadmapImg}
+                alt="Recruit-Roadmap"
+                className="RecruitRoadmapImg"
+              />
+            </div>
             <div className="section imagesInternCarousel2">
-              <Tricks />
+              <TrainingProcessDetail />
             </div>
             <div className="section imagesInternCarousel3">
-              <TrainingProcess />
+              <Tricks />
               <Footer />
             </div>
           </ReactFullpage.Wrapper>

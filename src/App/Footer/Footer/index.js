@@ -2,10 +2,10 @@ import { Container } from "react-bootstrap";
 import "./Footer.scss";
 
 //import logo
-import facebooklogo from "../../Asset/image/Facebooklogo.png";
-import instagramlogo from "../../Asset/image/Instagram.png";
-import youtubelogo from "../../Asset/image/youtube.png";
-import printerestlogo from "../../Asset/image/printerest.png";
+import facebooklogo from "../../../Asset/image/Facebooklogo.png";
+import instagramlogo from "../../../Asset/image/Instagram.png";
+import youtubelogo from "../../../Asset/image/youtube.png";
+import printerestlogo from "../../../Asset/image/printerest.png";
 function Footer() {
   return (
     <Container fluid className="Footer-Container">

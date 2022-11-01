@@ -23,14 +23,24 @@ h3 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  .RecruitRoadmapImg {
+    width: 150rem;
+  }
 }
 .imagesInternCarousel3 {
-  background-color: #1f1f1f;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
+// .imagesInternCarousel4 {
+//   background-image: url(../../Asset/image/cover13.png);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   background-attachment: fixed;
+// }
 .fp-section {
   text-align: center;
 }

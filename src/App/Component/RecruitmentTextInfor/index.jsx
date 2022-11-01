@@ -2,7 +2,7 @@ import "./RecruitmentTextInfor.scss";
 import Container from "react-bootstrap/Container";
 function RecruitmentTextInfor() {
   return (
-    <Container>
+    <Container id="recruitmenttextinfor">
       <ul className="recruitmenttextinfor-container">
         <li>
           <p>B1: Lọc CV</p>
