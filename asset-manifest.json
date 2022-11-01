@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/TuyendungLumi/static/css/main.5a218d79.css",
-    "main.js": "/TuyendungLumi/static/js/main.c1cf0148.js",
+    "main.css": "/TuyendungLumi/static/css/main.1b4a3d60.css",
+    "main.js": "/TuyendungLumi/static/js/main.badc313a.js",
+    "static/media/test6.png": "/TuyendungLumi/static/media/test6.a549c1c05e3d2234e93d.png",
     "static/media/cover1.png": "/TuyendungLumi/static/media/cover1.73738b389dd7a3a46ddd.png",
     "static/media/blogcover1.png": "/TuyendungLumi/static/media/blogcover1.680934e1603c646e8ddf.png",
+    "static/media/cover18.png": "/TuyendungLumi/static/media/cover18.9435523853ad623691c1.png",
     "static/media/cover8.png": "/TuyendungLumi/static/media/cover8.2b0e4004ee519705c0fd.png",
     "static/media/cover7.png": "/TuyendungLumi/static/media/cover7.ad09c321c11da8f116bf.png",
     "static/media/cover9.png": "/TuyendungLumi/static/media/cover9.4302c1ac2834282a6f45.png",
+    "static/media/cover19.png": "/TuyendungLumi/static/media/cover19.e28b31304282ab60335c.png",
     "static/media/cover5.png": "/TuyendungLumi/static/media/cover5.10fd0e073d581c3ab72a.png",
+    "static/media/cover13.png": "/TuyendungLumi/static/media/cover13.3a9d1986cacacab918ae.png",
     "static/media/cover10.png": "/TuyendungLumi/static/media/cover10.75f74d82dd38f88b3ece.png",
     "static/media/carouselmockup.png": "/TuyendungLumi/static/media/carouselmockup.74114671d31484edc1c8.png",
     "static/media/carouselmockup2.png": "/TuyendungLumi/static/media/carouselmockup2.2dd70ecd34805f4114e7.png",
     "static/media/cover11.png": "/TuyendungLumi/static/media/cover11.4f424c16890a5a04fb9e.png",
     "static/media/carouselmockup1.png": "/TuyendungLumi/static/media/carouselmockup1.5ca9574c6d7be8cf5e9f.png",
-    "static/media/test6.jpeg": "/TuyendungLumi/static/media/test6.7d940f3cc3280ee0bbdf.jpeg",
     "index.html": "/TuyendungLumi/index.html",
-    "main.5a218d79.css.map": "/TuyendungLumi/static/css/main.5a218d79.css.map",
-    "main.c1cf0148.js.map": "/TuyendungLumi/static/js/main.c1cf0148.js.map"
+    "main.1b4a3d60.css.map": "/TuyendungLumi/static/css/main.1b4a3d60.css.map",
+    "main.badc313a.js.map": "/TuyendungLumi/static/js/main.badc313a.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a218d79.css",
-    "static/js/main.c1cf0148.js"
+    "static/css/main.1b4a3d60.css",
+    "static/js/main.badc313a.js"
   ]
 }
