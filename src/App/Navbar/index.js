@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import LogoLumi from "../../Asset/image/logoLumi.png";
+import LogoLumi from "../../Asset/image/LogoSvg.svg";
 import "./Navbar.scss";
 
 function Navigation({ style }) {
