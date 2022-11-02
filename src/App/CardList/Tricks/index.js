@@ -30,7 +30,10 @@ function Tricks() {
   return (
     <>
       <div>
-        <HeadingSection description={`Mẹo hay`} style={TrickHeadingStyle} />
+        <HeadingSection
+          description={`Bí kíp bỏ túi từ ứng viên trở thành Lumier`}
+          style={TrickHeadingStyle}
+        />
         <Container>
           <Swiper
             // navigation={true}

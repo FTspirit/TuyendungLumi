@@ -84,13 +84,17 @@ function RecruitDetail({ props }) {
     //   }
 
     event.preventDefault();
-    const url = "10.10.50.81/api/cv/submit";
+    const url = "http://10.10.50.81:4001/api/cv/submit";
     const formData = new FormData();
-    formData.append("cv_file", selectedFile);
-    // formData.append("fileName", selectedFile.name);
-    // formData.append("fullname", name);
-    // formData.append("email", email);
-    // formData.append("mobile_phone", mobileNumber);
+    var arr = [1, 2, 3];
+    formData.append("cv-file", selectedFile);
+    formData.append("full_name", name);
+    formData.append("email", email);
+    formData.append("mobile_phone", mobileNumber);
+    formData.append("other_information", mobileNumber);
+    formData.append("department_id", mobileNumber);
+    formData.append("skill_id", JSON.stringify(arr));
+    formData.append("occupation_id", mobileNumber);
     console.log(formData);
     const config = {
       headers: {

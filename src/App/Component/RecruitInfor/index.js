@@ -27,13 +27,15 @@ function RecruitInfor() {
         <Container className="RecruitInfor-Container">
           <div className="RecruitInfor-Search">
             <div className="RecruitInfor-Button">
-              <Row md={8} lg={6}>
-                {uniqueTag.map((tag) => (
-                  <Col key={tag}>
-                    <Button>{tag}</Button>
-                  </Col>
-                ))}
-              </Row>
+              {uniqueTag.map((tag) => (
+                <Button>{tag}</Button>
+              ))}
+
+              {/* {uniqueTag.map((tag) => (
+                <Col key={tag}>
+                  <Button>{tag}</Button>
+                </Col>
+              ))} */}
             </div>
             <Row>
               <div className="RecruitInfor-Form">
