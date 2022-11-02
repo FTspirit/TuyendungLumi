@@ -9,7 +9,7 @@ import data from "../Asset/data/JD.json";
 import TricksDetails from "../App/Detail/TricksDetails/TrickDetail1";
 import TricksDetails2 from "../App/Detail/TricksDetails/TrickDetail2";
 import TricksDetails3 from "../App/Detail/TricksDetails/TrickDetail3";
-import TricksDetails4 from "../App/Detail/TricksDetails/TrickDetail1 copy 3";
+import TricksDetails4 from "../App/Detail/TricksDetails/TrickDetail4";
 
 // Import detail component
 import LearningLumiPage from "../Pages/DetailPage/LearningLumiPage";

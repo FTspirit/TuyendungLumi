@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import "./TricksDetails.scss";
 import Navigation from "../../../Navbar";
+import HeadingNavigation from "../../../HeadingNavigation";
 function TricksDetails3() {
   const bgcolor = {
     transperant: {
@@ -15,6 +16,11 @@ function TricksDetails3() {
       <Navigation style={bgcolor.color} />
       <div className="trickdetail-container">
         <Container>
+          <HeadingNavigation
+            namelink={`tuyendung`}
+            namebase={`Thực tập sinh`}
+            namedirect={`Cách gây ấn tượng từ vòng gửi mail ứng tuyển`}
+          />
           <h1 className="trickdetail-heading">
             Tự tin vượt qua vòng phỏng vấn tại Lumi
           </h1>
