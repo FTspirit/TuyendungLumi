@@ -9,6 +9,7 @@
   position: relative;
 }
 .Process-Containers {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   gap: 4rem;
@@ -38,4 +39,8 @@
 }
 .rotate {
   transform: rotate(0.5turn);
+}
+.Process-Image.Process-Image-ChangeSize {
+  width: 10rem !important;
+  height: 9rem !important;
 }

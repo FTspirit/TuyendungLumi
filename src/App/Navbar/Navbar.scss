@@ -71,3 +71,17 @@
   font-weight: 700;
   line-height: 2rem;
 }
+.lumiLogo {
+  width: 15rem !important;
+}
+@media (max-width: 992px) {
+  .navbar-toggler-icon {
+    font-size: 2rem;
+  }
+  button.navbar-toggler.collapsed {
+    border: none;
+  }
+  .btn-close {
+    font-size: 3.5rem;
+  }
+}

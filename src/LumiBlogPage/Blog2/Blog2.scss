@@ -1,0 +1,43 @@
+.trickdetail {
+  &-container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    .container {
+      font-size: 1.5rem;
+    }
+  }
+  &-heading {
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  &-author {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #008c4f;
+    padding-bottom: 5rem;
+  }
+  &-des {
+    display: block;
+    padding-top: 2rem;
+    max-width: 50vw !important;
+    margin: 0 auto;
+    .Description {
+      line-height: 1.6;
+      font-size: 1.7rem;
+      font-weight: 400;
+    }
+    .des-img {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2rem;
+    }
+    img {
+      text-align: center;
+    }
+  }
+}

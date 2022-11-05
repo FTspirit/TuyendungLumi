@@ -17,7 +17,7 @@ function TrickCard({ image, tiltle, description, style, author, time }) {
     <Card className="TrickCard-Container ">
       <Card.Img
         variant="top"
-        src={Test}
+        src={image}
         className="TrickCard-Image"
         style={style}
       />

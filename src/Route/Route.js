@@ -6,10 +6,15 @@ import ErrorPage from "../Pages/errorPage";
 import LumiLife from "../Pages/MainPage/lumilife";
 import Blog from "../Pages/MainPage/blog";
 import data from "../Asset/data/JD.json";
+
 import TricksDetails from "../App/Detail/TricksDetails/TrickDetail1";
 import TricksDetails2 from "../App/Detail/TricksDetails/TrickDetail2";
 import TricksDetails3 from "../App/Detail/TricksDetails/TrickDetail3";
 import TricksDetails4 from "../App/Detail/TricksDetails/TrickDetail4";
+
+import Blog1 from "../LumiBlogPage/Blog1";
+import Blog2 from "../LumiBlogPage/Blog2";
+import Blog3 from "../LumiBlogPage/Blog3";
 
 // Import detail component
 import LearningLumiPage from "../Pages/DetailPage/LearningLumiPage";
@@ -36,6 +41,9 @@ export default function RoutePage() {
         />
       ))}
       <Route path="/doisong" element={<LumiLife />} />
+      <Route path="/doisong/blog1" element={<Blog1 />} />
+      <Route path="/doisong/blog2" element={<Blog2 />} />
+      <Route path="/doisong/blog3" element={<Blog3 />} />
       <Route path="/blog" element={<Blog />} />
 
       <Route path="/blog/learning-with-lumi" element={<LearningLumiPage />} />

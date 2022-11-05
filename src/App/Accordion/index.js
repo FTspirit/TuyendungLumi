@@ -9,7 +9,11 @@ function FAQAccordion() {
     <>
       <HeadingSection description={`Những câu hỏi thường gặp`} />
       <Container className="FAQAccordion-Section-Container">
-        <Accordion className="FAQAccordion-Container">
+        <Accordion
+          className="FAQAccordion-Container"
+          defaultActiveKey={["0", "1"]}
+          alwaysOpen
+        >
           <Accordion.Item eventKey="0" className="FAQAccordion-item">
             <Accordion.Header className="FAQAccordion-heading">
               Làm sao để chuẩn bị tốt cho buổi phỏng vấn ?
@@ -36,34 +40,6 @@ function FAQAccordion() {
               tốt, và tự tin rằng mình sẽ chiếm lĩnh được những cơ hội, thử
               thách, thì chúc mừng bạn, bạn đã là một ứng viên cực kỳ sáng giá
               đó.
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="2" className="FAQAccordion-item">
-            <Accordion.Header className="FAQAccordion-heading">
-              Một số câu hỏi thường gặp
-            </Accordion.Header>
-            <Accordion.Body className="FAQAccordion-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="3" className="FAQAccordion-item">
-            <Accordion.Header className="FAQAccordion-heading">
-              Một số câu hỏi thường gặp
-            </Accordion.Header>
-            <Accordion.Body className="FAQAccordion-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>

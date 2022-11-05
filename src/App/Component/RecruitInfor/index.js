@@ -10,6 +10,7 @@ import Col from "react-bootstrap/Col";
 import { Button } from "react-bootstrap";
 
 import data from "../../../Asset/data/JD.json";
+import PaginatedItems from "../../RecruitPagination";
 function RecruitInfor() {
   const RecruitInforStyle = {
     color: "#333",
@@ -19,7 +20,7 @@ function RecruitInfor() {
   const uniqueDepartment = [...new Set(data.jobs.map((job) => job.phongban))];
   return (
     <>
-      <div>
+      <div className="RecruitInfor">
         <HeadingSection
           description={`Thông tin tuyển dụng`}
           style={RecruitInforStyle}
@@ -45,7 +46,10 @@ function RecruitInfor() {
                     <option>{loc}</option>
                   ))}
                 </Form.Select>
-                <Form.Select aria-label="Default select example">
+                <Form.Select
+                  aria-label="Default select example"
+                  className="form-phongban"
+                >
                   <option>Phòng ban</option>
                   {uniqueDepartment.map((dep) => (
                     <option>{dep}</option>

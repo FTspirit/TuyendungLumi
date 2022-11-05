@@ -32,9 +32,8 @@ function CarouselRoadmap() {
         modules={[Autoplay]}
         loop={true}
         // pagination={pagination}
-        // autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 2000 }}
         speed={1500}
-        pauseOnMouseEnter={false}
         touchReleaseOnEdges={true}
         initialSlide={1}
         // disableOnInteraction

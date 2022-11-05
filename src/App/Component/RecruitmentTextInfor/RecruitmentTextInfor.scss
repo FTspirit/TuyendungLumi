@@ -9,8 +9,19 @@
       font-weight: 650;
     }
     P:last-child {
-      font-size: 2rem;
-      font-weight: 400;
+      font-size: 2.2rem;
+      font-weight: 500;
     }
+  }
+}
+@media (max-height: 800px) {
+  // Recruit
+  .recruitmenttextinfor-container li P:last-child {
+    font-size: 1.8rem !important;
+  }
+  .recruitmenttextinfor-container li p:first-child {
+    font-size: 2.2rem;
+    color: #008c4f;
+    font-weight: 650;
   }
 }

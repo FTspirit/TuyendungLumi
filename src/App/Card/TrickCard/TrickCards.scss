@@ -12,6 +12,10 @@
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.8rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    color: #333;
   }
   &-Description {
     text-align: justify;
@@ -19,12 +23,14 @@
     font-weight: 500;
     line-height: 2.2rem;
     height: 13rem;
+    color: #333;
+    text-decoration: none !important;
   }
   &-Body {
     padding: 0 !important;
   }
   &-Date {
-    padding-top: 2rem;
+    padding: 2rem 0 2rem 0;
     text-align: left;
     font-size: 1.4rem;
     font-weight: 400;

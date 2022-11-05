@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Images
 import cover1 from "../../../Asset/image/cover10.png";
-import cover2 from "../../../Asset/image/cover19.png";
+import cover2 from "../../../Asset/image/cover20.png";
 import cover3 from "../../../Asset/image/cover18.png";
 
 // Import Swiper styles
@@ -31,8 +31,8 @@ function HomeImageCarousel() {
         modules={[Autoplay, Pagination]}
         loop={true}
         pagination={pagination}
-        // autoplay={{ delay: 2000 }}
-        // speed={1500}
+        autoplay={{ delay: 2000 }}
+        speed={1500}
         pauseOnMouseEnter={false}
         touchReleaseOnEdges={true}
         initialSlide={1}
