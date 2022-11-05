@@ -42,7 +42,7 @@ function BlogCarousel() {
             <Col md={8}>
               <TrickCard
                 image={Blogcover1}
-                style={cardSmall}
+                style={cardBig}
                 tiltle="Hoạt động Review Sách"
                 description="Đến hẹn lại lên, buổi Book Review vừa qua đã mang tới những cuốn sách tâm đắc nhất mà các thành viên của team đã đọc trong tháng 07. Từ những trang sách, qua mỗi góc nhìn, các thành viên team marketing đã dẫn dắt mọi người đi qua những câu chuyện khác nhau..."
                 author="Phạm Thanh Mai"
@@ -54,7 +54,7 @@ function BlogCarousel() {
                 <Col>
                   <TrickCard
                     image={Blogcover2}
-                    style={cardBig}
+                    style={cardSmall}
                     tiltle="Hành trình ra khơi - Lumi Hạ Long 2022"
                     description="Hành trình tham gia với hơn 200 thành viên bao gồm CBNV Lumi và các NPP trên 62 tỉnh thành trên cả nước. Với điểm đến Hạ Long, là món quà tuyệt diệu của thiên nhiên mang lại, đây là địa danh vô cùng ý nghĩa nhân dịp kỷ niệm 10 năm thành lập của Lumi..."
                     author="Phạm Thanh Mai"
