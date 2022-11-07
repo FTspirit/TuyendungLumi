@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Container from "react-bootstrap/Container";
 import HeadingSection from "../../Component/HeadingSection";
 import TypicalFaceCard from "../../Card/TypicalFaceCard";
+import typicalface from "../../../Asset/data/TypicalFace";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -46,24 +47,15 @@ function TypicalFaceCards() {
             centeredSlides={true}
             spaceBetween={50}
           >
-            <SwiperSlide>
-              <TypicalFaceCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TypicalFaceCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TypicalFaceCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TypicalFaceCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TypicalFaceCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TypicalFaceCard />
-            </SwiperSlide>
+            {typicalface.map((item) => (
+              <SwiperSlide>
+                <TypicalFaceCard
+                  name={item.tiltle}
+                  description={item.description}
+                  image={item.image}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </Container>
       </div>

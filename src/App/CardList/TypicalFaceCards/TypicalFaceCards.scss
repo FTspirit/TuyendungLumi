@@ -28,3 +28,26 @@
   height: 100%;
   object-fit: cover;
 }
+@media (min-height: 600px) {
+  .myTricksSwiper {
+    min-height: 40rem !important;
+  }
+}
+@media (min-height: 800px) {
+  .myTricksSwiper {
+    min-height: 50rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .TypicalFaceCards-Container {
+    max-width: 70vw;
+  }
+}
+@media (min-width: 1600px) {
+  .TypicalFaceCards-Container {
+    max-width: 60vw;
+  }
+  .myTricksSwiper {
+    padding-top: 10rem;
+  }
+}

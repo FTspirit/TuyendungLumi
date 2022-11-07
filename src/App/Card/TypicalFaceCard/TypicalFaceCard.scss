@@ -38,6 +38,7 @@
     padding: 2rem;
     background-color: #fff;
     border-radius: 2.5rem;
+    text-transform: uppercase;
   }
 }
 .TypicalFaceCards-Container {
@@ -50,5 +51,30 @@
 @media (max-width: 1200px) {
   .TypicalFaceCard-Container {
     padding: 0rem;
+  }
+}
+@media (min-width: 992px) {
+  .TypicalFaceCard {
+    &-Container {
+      padding: 0rem;
+    }
+    &-Image {
+      width: 25rem !important;
+      height: 25rem !important;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .TypicalFaceCard {
+    &-Container {
+      padding: 0rem;
+    }
+    &-Image {
+      width: 30rem !important;
+      height: 30rem !important;
+    }
+    &-Description {
+      font-size: 1.5rem;
+    }
   }
 }

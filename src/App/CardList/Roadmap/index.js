@@ -3,9 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Images
-import test from "../../../Asset/image/carouselmockup.png";
-import test1 from "../../../Asset/image/carouselmockup1.png";
-import test2 from "../../../Asset/image/carouselmockup2.png";
+import Roadmap from "../../../Asset/data/Roadmap";
 
 // Import CarouselCard
 import CarouselCard from "../../Card/CarouselCard";
@@ -38,67 +36,33 @@ function CarouselRoadmap() {
         initialSlide={1}
         // disableOnInteraction
         // freeMode={{ enabled: true, sticky: true }}
-        className="mySwiper"
+        className="myRoadmapCarousel"
         slidesPerView={3}
         centeredSlides={true}
         spaceBetween={50}
+        breakpoints={{
+          1: {
+            // width: 576,
+            slidesPerView: 1,
+          },
+          800: {
+            slidesPerView: 2,
+          },
+          992: {
+            // width: 768,
+            slidesPerView: 3,
+          },
+        }}
       >
-        <SwiperSlide>
-          <CarouselCard
-            image={test}
-            title="12-09-2002"
-            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselCard
-            image={test1}
-            title="12-09-2002"
-            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselCard
-            image={test2}
-            title="12-09-2002"
-            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselCard
-            image={test1}
-            title="12-09-2002"
-            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselCard
-            image={test2}
-            title="12-09-2002"
-            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselCard
-            image={test2}
-            title="12-09-2002"
-            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselCard
-            image={test2}
-            title="12-09-2002"
-            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselCard
-            image={test2}
-            title="12-09-2002"
-            description="Theo kết quả được công bố bởi Diễn đàn Kinh tế Thế giới (WEF) trong Báo Cáo Cạnh tranh toàn cầu 2019, Singapore được nhận định là thị trường cạnh tranh nhất thế giới. Điều gì đã khiến một thương hiệu nhà thông minh Made in Vietna"
-          />
-        </SwiperSlide>
+        {Roadmap.map((item) => (
+          <SwiperSlide>
+            <CarouselCard
+              image={item.image}
+              title={item.tiltle}
+              description={item.description}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

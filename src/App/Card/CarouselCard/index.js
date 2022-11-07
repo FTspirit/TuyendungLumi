@@ -3,17 +3,16 @@ import "./CarouselCard.scss";
 function CarouselCard({ title, description, image, imageAlt }) {
   return (
     <Card className="CarouselCard-Container">
-      <Card.Title className="CarouselCard-Title">12/09/2022</Card.Title>
+      <Card.Title className="CarouselCard-Title">{title}</Card.Title>
       <Card.Img
         variant="top"
-        src={image}
-        alt={imageAlt}
+        src={`${image}`}
+        alt="Roadmap logo"
         className="CarouselCard-Image"
       />
       <div>
-        <Card.Title className="CarouselCard-Title">THÀNH LẬP</Card.Title>
         <Card.Text className="CarouselCard-Description">
-          Bởi 3 cựu thành viên Robocon Đại học Bách Khoa Hà Nội
+          {description}
         </Card.Text>
       </div>
     </Card>

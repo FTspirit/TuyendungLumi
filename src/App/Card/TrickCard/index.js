@@ -4,8 +4,17 @@ import Card from "react-bootstrap/Card";
 // Import SCSS
 import "./TrickCards.scss";
 // Import Mockup Image
-import Test from "../../../Asset/image/test6.png";
-function TrickCard({ image, tiltle, description, style, author, time }) {
+import Mockup from "../../../Asset/image/test6.png";
+function TrickCard({
+  image,
+  tiltle,
+  description,
+  style,
+  author,
+  time,
+  styleDescription,
+}) {
+  console.log(style);
   return (
     // <Card>
     //   <Card.Img variant="top" src={image} />
@@ -15,15 +24,26 @@ function TrickCard({ image, tiltle, description, style, author, time }) {
     //   </Card.Body>
     // </Card>
     <Card className="TrickCard-Container ">
-      <Card.Img
-        variant="top"
-        src={image}
-        className="TrickCard-Image"
-        style={style}
-      />
+      {image === "" ? (
+        <Card.Img
+          variant="top"
+          src={Mockup}
+          className="TrickCard-Image"
+          style={style}
+        />
+      ) : (
+        <Card.Img
+          variant="top"
+          src={image}
+          className="TrickCard-Image"
+          style={style}
+        />
+      )}
       <Card.Body className="TrickCard-Body">
         <Card.Title className="TrickCard-Heading">{tiltle}</Card.Title>
-        <Card.Text className="TrickCard-Description">{description}</Card.Text>
+        <Card.Text className="TrickCard-Description" style={styleDescription}>
+          {description}
+        </Card.Text>
         <Card.Text className="TrickCard-Date">
           <span>{author}</span> | <span>{time}</span>
         </Card.Text>

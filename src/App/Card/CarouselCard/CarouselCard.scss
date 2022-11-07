@@ -12,12 +12,60 @@
   border-radius: 50% !important;
 }
 .CarouselCard-Description {
+  padding-top: 2rem;
   font-size: 1.1rem;
+  font-weight: 600;
 }
 .CarouselCard-Title {
-  padding-top: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 1.5rem;
 }
 .CarouselCard-Title,
 .CarouselCard-Description {
   color: #fff;
+}
+@media (max-width: 400px) {
+  .CarouselCard-Description {
+    padding-right: 7rem;
+    padding-left: 7rem;
+    font-size: 0.9rem;
+  }
+  .CarouselCard-Image {
+    max-width: 15rem !important;
+    max-height: 15rem !important;
+  }
+}
+@media (min-width: 992px) and (min-height: 400px) {
+  .CarouselCard-Description {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 0.9rem;
+  }
+  .CarouselCard-Image {
+    max-width: 13rem !important;
+    max-height: 13rem !important;
+  }
+}
+@media (min-width: 1300px) and (min-height: 400px) {
+  .CarouselCard-Description {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.1rem;
+  }
+  .CarouselCard-Image {
+    max-width: 15rem !important;
+    max-height: 15rem !important;
+  }
+}
+@media (min-width: 1600px) and (min-height: 600px) {
+  .CarouselCard-Description {
+    font-size: 1.2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .CarouselCard-Image {
+    max-width: 20rem !important;
+    max-height: 20rem !important;
+  }
 }

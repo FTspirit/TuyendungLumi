@@ -8,7 +8,7 @@ import "./InternCarousel.scss";
 import RecruitRoadmapImg from "../../Asset/image/cover13.png";
 
 // Import Component
-import Footer from "../../App/Footer/Footer";
+import Footer from "../../App/Footer/FooterCarousel";
 import TrainingProcess from "../../App/Component/TrainingProcess";
 import Tricks from "../../App/CardList/Tricks";
 import TypicalFaceCards from "../../App/CardList/TypicalFaceCards";
@@ -51,6 +51,8 @@ const InternCarousel = () => (
             </div>
             <div className="section imagesInternCarousel3">
               <Tricks />
+            </div>
+            <div className="section imagesInternCarousel3 fp-auto-height">
               <Footer />
             </div>
           </ReactFullpage.Wrapper>

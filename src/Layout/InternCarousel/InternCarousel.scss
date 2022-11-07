@@ -9,6 +9,9 @@ h3 {
 }
 .section {
   height: 100vh !important;
+  &-half {
+    height: 30vh !important;
+  }
 }
 .imagesInternCarousel1 {
   background-image: url(../../Asset/image/cover11.png);
@@ -24,7 +27,7 @@ h3 {
   background-position: center;
   background-attachment: fixed;
   .RecruitRoadmapImg {
-    width: 150rem;
+    width: 80vw;
   }
 }
 .imagesInternCarousel3 {

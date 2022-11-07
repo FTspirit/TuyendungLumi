@@ -24,3 +24,23 @@
     transform: translate(-50%, 2rem) !important;
   }
 }
+@media (max-width: 400px) {
+  .CarouselDescription {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) and (min-height: 400px) {
+  .CarouselDescription {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) and (min-height: 400px) {
+  .CarouselDescription {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1600px) and (min-height: 600px) {
+  .CarouselDescription {
+    font-size: 3.5rem;
+  }
+}
