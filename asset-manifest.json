@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TuyendungLumi/static/css/main.58d2ef87.css",
-    "main.js": "/TuyendungLumi/static/js/main.b574f91f.js",
+    "main.css": "/TuyendungLumi/static/css/main.dbf77d01.css",
+    "main.js": "/TuyendungLumi/static/js/main.b70455f8.js",
     "static/media/blogcover2.png": "/TuyendungLumi/static/media/blogcover2.043736b26b48b0cea241.png",
     "static/media/test6.png": "/TuyendungLumi/static/media/test6.a549c1c05e3d2234e93d.png",
     "static/media/cover1.png": "/TuyendungLumi/static/media/cover1.73738b389dd7a3a46ddd.png",
@@ -29,6 +29,7 @@
     "static/media/blogcover3.png": "/TuyendungLumi/static/media/blogcover3.62833719fabff0fca603.png",
     "static/media/12.png": "/TuyendungLumi/static/media/12.ae27ab7f68784515d62c.png",
     "static/media/13.png": "/TuyendungLumi/static/media/13.2828f2da6ab61f90ac1b.png",
+    "static/media/blogcover8.jpg": "/TuyendungLumi/static/media/blogcover8.324106ccd5d17ff97e57.jpg",
     "static/media/15.png": "/TuyendungLumi/static/media/15.a2b566572186c2762c6c.png",
     "static/media/cover11.png": "/TuyendungLumi/static/media/cover11.4f424c16890a5a04fb9e.png",
     "static/media/9.png": "/TuyendungLumi/static/media/9.baedfe27c9a883c88a9e.png",
@@ -39,6 +40,8 @@
     "static/media/8.png": "/TuyendungLumi/static/media/8.2fefe78e40a7526f1662.png",
     "static/media/blogcover5.jpg": "/TuyendungLumi/static/media/blogcover5.6bdd7caa18711b1e8054.jpg",
     "static/media/4.png": "/TuyendungLumi/static/media/4.71dd3804cc0f1445cfed.png",
+    "static/media/blogcover6.jpg": "/TuyendungLumi/static/media/blogcover6.d3542bfcebae3551e303.jpg",
+    "static/media/blogcover7.png": "/TuyendungLumi/static/media/blogcover7.55d92e3ff0502a98a1ec.png",
     "static/media/7.png": "/TuyendungLumi/static/media/7.094b71cbd476a8e211d1.png",
     "static/media/LogoSvg.svg": "/TuyendungLumi/static/media/LogoSvg.6a3387cd2a53ad82f1ad2c2fc6f89336.svg",
     "static/media/process4svg.svg": "/TuyendungLumi/static/media/process4svg.90cdb8afc4be228da767d93f8f7408ad.svg",
@@ -47,11 +50,11 @@
     "static/media/process3svg.svg": "/TuyendungLumi/static/media/process3svg.039fc8322987b01a635207d38fe7658c.svg",
     "static/media/process1svg.svg": "/TuyendungLumi/static/media/process1svg.7106a9b1919c8072f4f008d5f23ad956.svg",
     "index.html": "/TuyendungLumi/index.html",
-    "main.58d2ef87.css.map": "/TuyendungLumi/static/css/main.58d2ef87.css.map",
-    "main.b574f91f.js.map": "/TuyendungLumi/static/js/main.b574f91f.js.map"
+    "main.dbf77d01.css.map": "/TuyendungLumi/static/css/main.dbf77d01.css.map",
+    "main.b70455f8.js.map": "/TuyendungLumi/static/js/main.b70455f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.58d2ef87.css",
-    "static/js/main.b574f91f.js"
+    "static/css/main.dbf77d01.css",
+    "static/js/main.b70455f8.js"
   ]
 }
