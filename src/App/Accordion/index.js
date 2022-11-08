@@ -5,9 +5,15 @@ import Footer from "../Footer/Footer";
 import "./Accordion.scss";
 
 function FAQAccordion() {
+  const AccHeadingColor = {
+    color: "#333",
+  };
   return (
     <>
-      <HeadingSection description={`Những câu hỏi thường gặp`} />
+      <HeadingSection
+        description={`Những câu hỏi thường gặp`}
+        style={AccHeadingColor}
+      />
       <Container className="FAQAccordion-Section-Container">
         <Accordion
           className="FAQAccordion-Container"

@@ -24,8 +24,9 @@ function TricksDetails3() {
           <h1 className="trickdetail-heading">
             Tự tin vượt qua vòng phỏng vấn tại Lumi
           </h1>
-          <p className="trickdetail-author"> Phạm Thanh Mai</p>
+
           <div className="trickdetail-des">
+            <p className="trickdetail-author"> Phạm Thanh Mai</p>
             <p>
               Đến với v&ograve;ng phỏng vấn tại Lumi, nghĩa l&agrave; bạn
               đ&atilde; vượt qua c&aacute;c v&ograve;ng CV, test, chỉ c&ograve;n

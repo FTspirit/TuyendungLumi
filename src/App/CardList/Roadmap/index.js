@@ -22,9 +22,15 @@ import { Autoplay } from "swiper";
 // import { Pagination } from "swiper";
 
 function CarouselRoadmap() {
+  const HeadingStyle = {
+    color: "#333",
+  };
   return (
     <div className="CarouselRoadmapContainer">
-      <HeadingSection description={`Hành trình phát triển`} />
+      <HeadingSection
+        description={`Hành trình phát triển`}
+        style={HeadingStyle}
+      />
       <Swiper
         // navigation={true}
         modules={[Autoplay]}

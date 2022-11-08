@@ -25,3 +25,8 @@
   color: #fff;
   letter-spacing: 0.07rem;
 }
+@media (max-height: 800px) {
+  .Footer-Container {
+    transform: scale(0.8);
+  }
+}

@@ -29,7 +29,7 @@ function Tricks() {
   };
   return (
     <>
-      <div>
+      <div className="Tricks-container">
         <HeadingSection
           description={`Bí kíp bỏ túi từ ứng viên trở thành Lumier`}
           style={TrickHeadingStyle}
@@ -49,7 +49,7 @@ function Tricks() {
             className="myTricksSwiper"
             slidesPerView={3}
             centeredSlides={true}
-            spaceBetween={100}
+            spaceBetween={50}
           >
             {data.trick.map((trick) => (
               <SwiperSlide>

@@ -32,7 +32,7 @@ function Footer() {
         </div>
       </div>
       <div className="Footer-Description">
-        <p className="Footer-detail">© 2021 Lumi., JSC. All rights reserved.</p>
+        <p className="Footer-detail">© 2022 Lumi., JSC. All rights reserved.</p>
       </div>
     </Container>
   );

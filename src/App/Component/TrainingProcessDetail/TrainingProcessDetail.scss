@@ -3,11 +3,13 @@
   overflow: scroll;
   height: 60vh;
   margin-top: 5rem;
+  width: 70vw !important;
   h1 {
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    padding-top: 2rem;
     color: #008c4f;
+    margin-bottom: 0rem;
   }
   p {
     font-size: 1.6rem;

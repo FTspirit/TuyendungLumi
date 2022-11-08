@@ -22,8 +22,9 @@ function TricksDetails4() {
             namedirect={`Cách gây ấn tượng từ vòng gửi mail ứng tuyển`}
           />
           <h1 className="trickdetail-heading">Những lưu ý cho Newbies</h1>
-          <p className="trickdetail-author"> Phạm Thanh Mai</p>
+
           <div className="trickdetail-des">
+            <p className="trickdetail-author"> Phạm Thanh Mai</p>
             <p>
               CV&nbsp;l&agrave; viết tắt của &quot;Curriculum Vitae&quot;,
               l&agrave; bản t&oacute;m tắt những th&ocirc;ng tin về tr&igrave;nh

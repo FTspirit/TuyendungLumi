@@ -26,8 +26,9 @@ function TricksDetails() {
           <h1 className="trickdetail-heading">
             Cách tạo 1 CV ấn tượng khi đi xin việc
           </h1>
-          <p className="trickdetail-author"> Phạm Thanh Mai</p>
+
           <div className="trickdetail-des">
+            <p className="trickdetail-author"> Phạm Thanh Mai</p>
             <p>
               CV&nbsp;l&agrave; viết tắt của &quot;Curriculum Vitae&quot;,
               l&agrave; bản t&oacute;m tắt những th&ocirc;ng tin về tr&igrave;nh

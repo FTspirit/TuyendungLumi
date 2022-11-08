@@ -27,8 +27,9 @@ function TricksDetails2() {
           <h1 className="trickdetail-heading">
             Cách gây ấn tượng từ vòng gửi mail ứng tuyển
           </h1>
-          <p className="trickdetail-author"> Phạm Thanh Mai</p>
+
           <div className="trickdetail-des">
+            <p className="trickdetail-author"> Phạm Thanh Mai</p>
             <p>
               Lumi đ&atilde; chia sẻ với c&aacute;c bạn những bước cơ bản để tạo
               một CV g&acirc;y ấn tượng với nh&agrave; tuyển dụng ở b&agrave;i

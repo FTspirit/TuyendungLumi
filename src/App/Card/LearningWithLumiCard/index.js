@@ -1,37 +1,60 @@
-// Import Image
-import mockup1 from "../../../Asset/image/carouselmockup.png";
+// Import Lib
+import Card from "react-bootstrap/Card";
 
 // Import SCSS
 import "./LearningWithLumiCard.scss";
-function LearningWithLumiCard() {
+// Import Mockup Image
+import Mockup from "../../../Asset/image/test6.png";
+function LearnigWithLumiCard({
+  image,
+  tiltle,
+  description,
+  style,
+  author,
+  time,
+  styleDescription,
+}) {
+  console.log(style);
   return (
-    <>
-      <div className="LearningWithLumiCard-Container">
-        <div className="">
-          <img
-            src={mockup1}
-            alt="ảnh thực tập sinh"
-            className="LearningWithLumiCard-Image"
-          />
-        </div>
-        <div className="LearningWithLumiCard-Body">
-          <div className="LearningWithLumiCard-Heading-Container">
-            <div className="LearningWithLumiCard-Heading">Tiêu đề chính</div>
-          </div>
-          <div className="LearningWithLumiCard-Description">
-            Khi đi thực tập tại Lumi là một môi trường mà em cảm thấy mình học
-            hỏi được nhiề. Không chỉ là kiến thức chuyên môn mà con văn hóa,
-            cách ứng xử, kĩ năng mềm, kĩ năng thuyết trình, kĩ năng giao tiếp,…
-            <br />
-            Luôn luôn được các anh chia sẻ kinh nghiệm kiến thức về lập trình đã
-            giúp em cải thiện rất nhiều về tư duy hay cách xử lí vấn đề
-          </div>
-          <div className="LearningWithLumiCard-Description-Date">
-            Tên tác giả | Ngày / tháng / năm
-          </div>
-        </div>
-      </div>
-    </>
+    // <Card>
+    //   <Card.Img variant="top" src={image} />
+    //   <Card.Body>
+    //     <Card.Title>{title}</Card.Title>
+    //     <Card.Text>{description}</Card.Text>
+    //   </Card.Body>
+    // </Card>
+    <Card className="LearningWithLumiCard-Container ">
+      {image === "" ? (
+        <Card.Img
+          variant="top"
+          src={Mockup}
+          className="LearningWithLumiCard-Image"
+          style={style}
+        />
+      ) : (
+        <Card.Img
+          variant="top"
+          src={image}
+          className="LearningWithLumiCard-Image"
+          style={style}
+        />
+      )}
+      <Card.Body className="LearningWithLumiCard-Body">
+        <Card.Title className="LearningWithLumiCard-Heading">
+          {tiltle}
+        </Card.Title>
+        <Card.Text
+          className="LearningWithLumiCard-Description"
+          style={styleDescription}
+        >
+          {description}
+        </Card.Text>
+        <Card.Text className="LearningWithLumiCard-Date">
+          <span>{author}</span> | <span>{time}</span>
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
-export default LearningWithLumiCard;
+
+export default LearnigWithLumiCard;
