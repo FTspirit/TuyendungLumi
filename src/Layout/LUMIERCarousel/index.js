@@ -39,7 +39,7 @@ function LUMIERCarousel() {
     height: "20rem",
   };
   const cardBig = {
-    height: "60rem",
+    height: "57.9rem",
   };
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -16,6 +16,9 @@ import Blog1 from "../LumiBlogPage/Blog1";
 import Blog2 from "../LumiBlogPage/Blog2";
 import Blog3 from "../LumiBlogPage/Blog3";
 
+import BlogPage1 from "../BlogPage/BlogPage1";
+import BlogPage2 from "../BlogPage/BlogPage2";
+import BlogPage3 from "../BlogPage/BlogPage3";
 // Import detail component
 import LearningLumiPage from "../Pages/DetailPage/LearningLumiPage";
 import RecruitDetailPage from "../Pages/DetailPage/RecruitDetailPage";
@@ -45,8 +48,9 @@ export default function RoutePage() {
       <Route path="/doisong/blog2" element={<Blog2 />} />
       <Route path="/doisong/blog3" element={<Blog3 />} />
       <Route path="/blog" element={<Blog />} />
-
-      <Route path="/blog/learning-with-lumi" element={<LearningLumiPage />} />
+      <Route path="blog/blogPage1" element={<BlogPage1 />} />
+      <Route path="blog/blogPage2" element={<BlogPage2 />} />
+      <Route path="blog/blogPage3" element={<BlogPage3 />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   );

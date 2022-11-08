@@ -1,8 +1,10 @@
+import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import "./TricksDetails.scss";
 import Navigation from "../../../Navbar";
 import HeadingNavigation from "../../../HeadingNavigation";
-function TricksDetails() {
+import Footer from "../../../Footer/FooterCarousel";
+function BlogPage1() {
   const bgcolor = {
     transperant: {
       backgroundColor: "transparent",
@@ -11,415 +13,179 @@ function TricksDetails() {
       backgroundColor: "#fff",
     },
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-      <div className="blog-image-cover">
-        <Navigation style={bgcolor.color} />
-        <HeadingNavigation
-          namelink={`tuyendung`}
-          namebase={`Thực tập sinh`}
-          namedirect={`Cách gây ấn tượng từ vòng gửi mail ứng tuyển`}
-        />
-      </div>
+      <Navigation style={bgcolor.color} />
+
       <div className="trickdetail-container">
+        <HeadingNavigation
+          namelink={`thuctapsinh`}
+          namebase={`Thực tập sinh`}
+          namedirect={`Cách tạo 1 CV ấn tượng khi đi xin việc`}
+        />
+
         <Container>
           <h1 className="trickdetail-heading">
             Cách tạo 1 CV ấn tượng khi đi xin việc
           </h1>
-
           <div className="trickdetail-des">
             <p className="trickdetail-author"> Phạm Thanh Mai</p>
-            <p>
-              CV&nbsp;l&agrave; viết tắt của &quot;Curriculum Vitae&quot;,
-              l&agrave; bản t&oacute;m tắt những th&ocirc;ng tin về tr&igrave;nh
-              độ học vấn, kinh nghiệm l&agrave;m&nbsp;việc, c&aacute;c kỹ năng
-              li&ecirc;n quan tới c&ocirc;ng&nbsp;việc&nbsp;m&agrave; ứng
-              vi&ecirc;n muốn ứng tuyển, để lại ấn tượng ban đầu cho nh&agrave;
-              tuyển dụng về ứng vi&ecirc;n m&agrave; họ đang x&eacute;t duyệt.
-            </p>
-            <p>
-              Đối với nhiều bạn sinh vi&ecirc;n lần đầu viết CV sẽ gặp
-              kh&ocirc;ng &iacute;t bỡ ngỡ, phải l&agrave;m sao viết cho
-              đ&uacute;ng, chuẩn, thể hiện được điểm mạnh v&agrave; lợi thế
-              c&aacute; nh&acirc;n đối với doanh nghiệp m&agrave; m&igrave;nh
-              ứng tuyển.
-            </p>
-            <p>
-              Bạn đừng lo nh&eacute;, h&ocirc;m nay Mẹo hay của Lumi sẽ
-              gi&uacute;p bạn gỡ rối phần v&agrave;o, một c&aacute;ch cơ bản,
-              cực dễ hiểu để viết CV.
-            </p>
-            <p>N&agrave;o h&atilde;y bắt đầu nha!</p>
-            <h1>I. Hình Thức</h1>
-            <ol>
-              <li>
-                <p>Chọn font chữ r&otilde; r&agrave;ng, dễ đọc.</p>
-              </li>
-            </ol>
-            <p>
-              Chọn một trong c&aacute;c kiểu chữ CV ti&ecirc;u chuẩn: Arial,
-              Tahoma, Times New Roman.
-            </p>
-            <p>
-              Sử dụng cỡ chữ 11 đến 12 &nbsp;v&agrave; khoảng c&aacute;ch đơn.
-              Đối với t&ecirc;n v&agrave; ti&ecirc;u đề phần của bạn, h&atilde;y
-              chọn cỡ chữ 14 đến 16 pt
-            </p>
-            <p>
-              M&agrave;u chữ c&oacute; độ tương phản cao với m&agrave;u
-              background
-            </p>
-            <p>Lưu &yacute;: Lu&ocirc;n đ&uacute;ng ch&iacute;nh tả.</p>
-            <ol start="2">
-              <li>
-                <p>M&agrave;u sắc, họa tiết</p>
-              </li>
-            </ol>
-            <p>
-              H&agrave;i h&ograve;a, ph&ugrave; hợp với từng t&iacute;nh chất
-              c&ocirc;ng việc tự chọn. Đừng nhồi nh&eacute;t CV của bạn bằng
-              qu&aacute; nhiều chi tiết, hoặc đồ họa ph&ocirc; trương. Lưu
-              &yacute; răng, c&agrave;ng đơn giản, c&agrave;ng đẹp.
-            </p>
-            <p>
-              N&ecirc;n tạo những khoảng trắng - sẽ khiến CV nh&igrave;n
-              tho&aacute;ng v&agrave; kh&ocirc;ng bị bức bối v&igrave;
-              qu&aacute; nhiều chi tiết hay chữ.
-            </p>
-            <p>
-              Hầu hết CV được in ra sẽ tr&ecirc;n mực đen giấy trắng, qu&aacute;
-              nhiều đồ họa c&oacute; thể khiến nh&agrave; tuyển dụng kh&oacute;
-              đọc.
-            </p>
-            <ol start="3">
-              <li>
-                <p>Bố cục</p>
-              </li>
-            </ol>
-            <p>Đặt lề khoảng 1,27-2cm.&nbsp;</p>
-            <p>
-              Đảm bảo rằng c&aacute;c ti&ecirc;u đề CV của bạn đồng nhất -
-              l&agrave;m cho ch&uacute;ng lớn hơn v&agrave; in đậm.
-            </p>
-            <p>
-              C&aacute;c d&ograve;ng đều được căn lề tr&aacute;i, d&ugrave;ng
-              Single Spacing v&agrave; đồng đều cho tất cả c&aacute;c
-              d&ograve;ng trong văn bản. C&aacute;c list c&ocirc;ng việc
-              v&agrave; skills n&ecirc;n tr&igrave;nh b&agrave;y r&otilde;
-              r&agrave;ng, v&agrave; c&oacute; đ&aacute;nh dấu d&ograve;ng để
-              tạo điểm nhấn.
-            </p>
-            <p>
-              Ngo&agrave;i ra khi gửi mail cho nh&agrave; tuyển dụng, bạn
-              n&ecirc;n để định dạng l&agrave; PDF, v&agrave; chỉ n&ecirc;n
-              g&oacute;i gọn trong 1 trang tr&igrave;nh b&agrave;y.
-            </p>
-            <p>
+            <p className="Description">
+              CV là viết tắt của "Curriculum Vitae", là bản tóm tắt những thông
+              tin về trình độ học vấn, kinh nghiệm làm việc, các kỹ năng liên
+              quan tới công việc mà ứng viên muốn ứng tuyển, để lại ấn tượng ban
+              đầu cho nhà tuyển dụng về ứng viên mà họ đang xét duyệt.
+              <br /> Đối với nhiều bạn sinh viên lần đầu viết CV sẽ gặp không ít
+              bỡ ngỡ, phải làm sao viết cho đúng, chuẩn, thể hiện được điểm mạnh
+              và lợi thế cá nhân đối với doanh nghiệp mà mình ứng tuyển.
+              <br /> Bạn đừng lo nhé, hôm nay Mẹo hay của Lumi sẽ giúp bạn gỡ
+              rối phần vào, một cách cơ bản, cực dễ hiểu để viết CV.
               <br />
+              Nào hãy bắt đầu nha!
             </p>
-            <h1>II. NỘI DUNG</h1>
-            <ol>
-              <li>
-                <p>Ảnh ch&acirc;n dung v&agrave; phần t&ecirc;n</p>
-              </li>
-            </ol>
-            <p>
-              Bức ảnh thể hiện sự ấn tượng ban đầu về h&igrave;nh ảnh bản
-              th&acirc;n, v&igrave; thế bạn h&atilde;y chọn bức ảnh tr&ocirc;ng
-              chuy&ecirc;n nghiệp, chất lượng cao, nhưng cũng kh&ocirc;ng
-              qu&aacute; cứng nhắc như ảnh chụp giấy tờ t&ugrave;y th&acirc;n.
+            <p className="Description">
+              <h1>I. HÌNH THỨC</h1>
             </p>
-            <p>
-              Phần t&ecirc;n l&agrave; phần nổi bật nhất, vị tr&iacute;
-              tr&ecirc;n c&ugrave;ng của CV, n&ecirc;n giữ t&ecirc;n chỉ trong 1
-              d&ograve;ng.
+            <p className="Description">
+              <h2>1. Chọn font chữ rõ ràng, dễ đọc.</h2>
+              Chọn một trong các kiểu chữ CV tiêu chuẩn: Arial, Tahoma, Times
+              New Roman. Sử dụng cỡ chữ 11 đến 12 và khoảng cách đơn. Đối với
+              tên và tiêu đề phần của bạn, hãy chọn cỡ chữ 14 đến 16 pt
+              <br /> Màu chữ có độ tương phản cao với màu background
+              <br /> Lưu ý: Luôn đúng chính tả.
             </p>
-            <ol start="2">
-              <li>
-                <p>Th&ocirc;ng tin li&ecirc;n lạc:</p>
-              </li>
-            </ol>
-            <p>Bạn n&ecirc;n lưu &yacute; những điểm sau:</p>
-            <ul>
-              <li>
-                <p>Tr&igrave;nh b&agrave;y nổi bật, dễ t&igrave;m</p>
-              </li>
-              <li>
-                <p>
-                  Đầy đủ, ch&iacute;nh x&aacute;c: th&ocirc;ng tin li&ecirc;n
-                  lạc, bao gồm: địa chỉ, số điện thoại, email.
-                </p>
-              </li>
-              <li>
-                <p>
-                  N&ecirc;n bổ sung link hồ sơ c&aacute; nh&acirc;n để
-                  nh&agrave; tuyển dụng dễ d&agrave;ng t&igrave;m kiếm
-                  th&ecirc;m th&ocirc;ng tin về bạn: fb/ linkedin, portfolio,
-                  web c&aacute; nh&acirc;n (mạng x&atilde; hội l&agrave; 1 ưu
-                  điểm nếu bạn biết tận dụng l&agrave;m thương hiệu c&aacute;
-                  nh&acirc;n)
-                </p>
-              </li>
-            </ul>
-            <p>Những điều cần tr&aacute;nh:</p>
-            <ul>
-              <li>
-                <p>
-                  Đ&iacute;nh k&egrave;m địa chỉ fb/ig c&aacute; nh&acirc;n nếu
-                  n&oacute; kh&ocirc;ng thể hiện cho c&ocirc;ng việc bạn đang
-                  ứng tuyển.
-                </p>
-              </li>
-              <li>
-                <p>
-                  &nbsp;Link đ&iacute;nh k&egrave;m qu&aacute; d&agrave;i,
-                  v&agrave; kh&ocirc;ng được t&ugrave;y chỉnh URL
-                </p>
-              </li>
-            </ul>
-            <ol start="3">
-              <li>
-                <p>
-                  &nbsp; Mục ti&ecirc;u nghề nghiệp/ M&ocirc; tả bản th&acirc;n
-                </p>
-              </li>
-            </ol>
-            <p>Những lưu &yacute; để CV của bạn ấn tượng hơn:</p>
-            <ul>
-              <li>
-                <p>Viết ngắn gọn, dưới 100 từ, 1-2 c&acirc;u</p>
-              </li>
-              <li>
-                <p>
-                  Mục ti&ecirc;u/ m&ocirc; tả bản th&acirc;n trả lời cho
-                  c&acirc;u hỏi: V&igrave; sao bạn ph&ugrave; hợp? Mục
-                  ti&ecirc;u sự nghiệp của bạn l&agrave; g&igrave;? Bạn
-                  c&oacute; thể l&agrave;m g&igrave; để đ&oacute;ng g&oacute;p
-                  cho c&ocirc;ng việc? V&iacute; dụ: Trở th&agrave;nh kỹ sư lập
-                  tr&igrave;nh nh&uacute;ng IOT trong mảng Smart home.
-                </p>
-              </li>
-              <li>
-                <p>T&oacute;m tắt những điểm mạnh, nổi bật của bạn.</p>
-              </li>
-            </ul>
-            <p>Những điều cần tr&aacute;nh:</p>
-            <ul>
-              <li>
-                <p>
-                  Nội dung thiếu trọng t&acirc;m, kh&ocirc;ng thể hiện được điểm
-                  ph&ugrave; hợp của bạn với c&ocirc;ng việc v&agrave; doanh
-                  nghiệp.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Nội dung chung chung, kh&ocirc;ng thể hiện được điểm
-                  kh&aacute;c biệt của bạn, v&iacute; dụ: học hỏi m&ocirc;i
-                  trường chuy&ecirc;n nghiệp.
-                </p>
-              </li>
-              <li>
-                <p>Lấy nội dung CV của người kh&aacute;c đưa v&agrave;o.</p>
-              </li>
-            </ul>
-            <ol start="4">
-              <li>
-                <p>Kinh nghiệm l&agrave;m việc</p>
-              </li>
-            </ol>
-            <p>
-              [T&ecirc;n vị tr&iacute; c&ocirc;ng việc 1]&nbsp;
-              &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;[Thời gian l&agrave;m việc]
+            <p className="Description">
+              <h2>2. Màu sắc, họa tiết.</h2>
+              Chọn một trong các kiểu chữ CV tiêu chuẩn: Arial, Tahoma, Times
+              New Roman. Sử dụng cỡ chữ 11 đến 12 và khoảng cách đơn. Đối với
+              tên và tiêu đề phần của bạn, hãy chọn cỡ chữ 14 đến 16 pt
+              <br /> Màu chữ có độ tương phản cao với màu background
+              <br /> Lưu ý: Luôn đúng chính tả.
             </p>
-            <p>&nbsp; &nbsp; [T&ecirc;n c&ocirc;ng ty] &nbsp; [Địa điểm]</p>
-            <p>
-              &nbsp; &nbsp; [M&ocirc; tả tr&aacute;ch nhiệm, th&agrave;nh
-              t&iacute;ch]
+            <p className="Description">
+              <h2>1. Chọn font chữ rõ ràng, dễ đọc.</h2>
+              Hài hòa, phù hợp với từng tính chất công việc tự chọn. Đừng nhồi
+              nhét CV của bạn bằng quá nhiều chi tiết, hoặc đồ họa phô trương.
+              Lưu ý răng, càng đơn giản, càng đẹp.
+              <br /> Nên tạo những khoảng trắng - sẽ khiến CV nhìn thoáng và
+              không bị bức bối vì quá nhiều chi tiết hay chữ.
+              <br /> Hầu hết CV được in ra sẽ trên mực đen giấy trắng, quá nhiều
+              đồ họa có thể khiến nhà tuyển dụng khó đọc.
             </p>
-            <p>Điều bạn n&ecirc;n l&agrave;m:</p>
-            <ul>
-              <li>
-                <p>Sắp xếp theo thứ tự thời gian, từ gần nhất đến xa nhất.</p>
-              </li>
-              <li>
-                <p>
-                  N&ecirc;u r&otilde; t&ecirc;n c&ocirc;ng ty, thời gian bắt đầu
-                  - kết th&uacute;c c&ocirc;ng việc.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Trả lời được những c&acirc;u hỏi: C&ocirc;ng việc bạn
-                  đ&atilde; l&agrave;m l&agrave; g&igrave;? Bạn đ&atilde;
-                  l&agrave;m thế n&agrave;o? Gi&aacute; trị bạn tạo ra cho
-                  c&ocirc;ng việc l&agrave; g&igrave;?&nbsp;
-                </p>
-              </li>
-              <li>
-                <p>
-                  Tận dụng những con số khi m&ocirc; tả tr&aacute;ch nhiệm
-                  v&agrave; th&agrave;nh t&iacute;ch.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Tận dụng những từ kh&oacute;a li&ecirc;n quan đến c&ocirc;ng
-                  việc ứng tuyển.
-                </p>
-              </li>
-            </ul>
-            <p>Bạn cần tr&aacute;nh:</p>
-            <ul>
-              <li>
-                <p>Viết d&agrave;i d&ograve;ng như một đoạn văn</p>
-              </li>
-              <li>
-                <p>Đề cập kinh nghiệm kh&ocirc;ng li&ecirc;n quan.</p>
-              </li>
-              <li>
-                <p>
-                  Chung chung, kh&ocirc;ng đưa ra được cụ thể nội dung
-                  c&ocirc;ng việc.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Kinh nghiệm li&ecirc;n quan nhưng đ&atilde; qu&aacute;
-                  l&acirc;u kh&ocirc;ng l&agrave;m.
-                </p>
-              </li>
-            </ul>
-            <ol start="5">
-              <li>
-                <p>Học vấn/ Bằng cấp, chứng chỉ</p>
-              </li>
-            </ol>
-            <ul>
-              <li>
-                <p>
-                  Học vấn/ bằng cấp: Theo thứ tự bằng cao ở tr&ecirc;n, thấp ở
-                  dưới.
-                </p>
-              </li>
-              <li>
-                <p>Chứng chỉ: Theo thứ tự thời gian tr&ecirc;n bằng.</p>
-              </li>
-            </ul>
-            <p>Những điều n&ecirc;n l&agrave;m:</p>
-            <ul>
-              <li>
-                <p>
-                  N&ecirc;u điểm số m&ocirc;n chuy&ecirc;n ng&agrave;nh
-                  li&ecirc;n quan, nếu l&agrave; điểm giỏi/ nổi trội.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Học bổng, đề &aacute;n, nghi&ecirc;n cứu khoa học hoặc những
-                  kh&oacute;a học li&ecirc;n quan đến vị tr&iacute; ứng tuyển.
-                </p>
-              </li>
-              <li>
-                <p>Chứng chỉ ngoại ngữ, kỹ năng, kh&oacute;a học&hellip;</p>
-              </li>
-            </ul>
-            <p>Kh&ocirc;ng n&ecirc;n:</p>
-            <ul>
-              <li>
-                <p>
-                  Ghi qu&aacute; tr&igrave;nh học tập từ c&aacute;c cấp phổ
-                  th&ocirc;ng.
-                </p>
-              </li>
-            </ul>
-            <ol start="6">
-              <li>
-                <p>Kỹ năng:</p>
-              </li>
-            </ol>
-            <p>N&ecirc;n:</p>
-            <ul>
-              <li>
-                <p>
-                  Ph&acirc;n biệt kỹ năng chuy&ecirc;n m&ocirc;n v&agrave; kỹ
-                  năng mềm
-                </p>
-              </li>
-              <li>
-                <p>
-                  Đặt những kỹ năng quan trọng v&agrave; li&ecirc;n quan đến
-                  c&ocirc;ng việc nhất l&ecirc;n trước.
-                </p>
-              </li>
-            </ul>
-            <p>Kh&ocirc;ng n&ecirc;n:</p>
-            <ul>
-              <li>
-                <p>
-                  D&ugrave;ng c&aacute;c thang đo kỹ năng một c&aacute;ch chung
-                  chung, kh&ocirc;ng r&otilde; r&agrave;ng.
-                </p>
-              </li>
-              <li>
-                <p>
-                  N&ecirc;u những kỹ năng m&agrave; bạn kh&ocirc;ng c&oacute;.
-                </p>
-              </li>
-              <li>
-                <p>
-                  D&ugrave;ng từ ngữ mơ hồ, kh&ocirc;ng r&otilde; r&agrave;ng.
-                </p>
-              </li>
-            </ul>
-            <ol start="7">
-              <li>
-                <p>
-                  C&aacute;c mục kh&aacute;c (Sở th&iacute;ch, sở trường,
-                  c&aacute;c hoạt động XH)
-                </p>
-              </li>
-            </ol>
-            <p>N&ecirc;n:</p>
-            <ul>
-              <li>
-                <p>
-                  Thể hiện t&iacute;nh c&aacute;ch, sở th&iacute;ch nổi bật
-                  v&agrave; t&agrave;i lẻ, ph&ugrave; hợp với c&ocirc;ng việc
-                </p>
-              </li>
-              <li>
-                <p>
-                  Mi&ecirc;u tả ngắn gọn để l&agrave;m r&otilde; hơn sở
-                  th&iacute;ch v&agrave; đam m&ecirc; c&aacute; nh&acirc;n
-                </p>
-              </li>
-              <li>
-                <p>Th&ecirc;m nguồn tham vấn (References)</p>
-              </li>
-            </ul>
-            <p>Kh&ocirc;ng n&ecirc;n:</p>
-            <ul>
-              <li>
-                <p>
-                  Đưa ra những th&ocirc;ng tin chung chung, g&acirc;y
-                  lo&atilde;ng CV, tốn diện t&iacute;ch.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Sở th&iacute;ch tr&aacute;i ngược với đặc th&ugrave; doanh
-                  nghiệp, c&ocirc;ng việc m&agrave; bạn đang ứng tuyển.
-                </p>
-              </li>
-            </ul>
-            <p>
+            <p className="Description">
+              <h2>3. Bố cục.</h2>
+              Đặt lề khoảng 1,27-2cm.
+              <br /> Đảm bảo rằng các tiêu đề CV của bạn đồng nhất - làm cho
+              chúng lớn hơn và in đậm.
+              <br /> Các dòng đều được căn lề trái, dùng Single Spacing và đồng
+              đều cho tất cả các dòng trong văn bản. Các list công việc và
+              skills nên trình bày rõ ràng, và có đánh dấu dòng để tạo điểm
+              nhấn.
+              <br /> Ngoài ra khi gửi mail cho nhà tuyển dụng, bạn nên để định
+              dạng là PDF, và chỉ nên gói gọn trong 1 trang trình bày.
+            </p>
+            <p className="Description">
+              <h1>II. NỘI DUNG</h1>
+            </p>
+            <p className="Description">
+              <h2>1. Ảnh chân dung và phần tên .</h2>
+              Bức ảnh thể hiện sự ấn tượng ban đầu về hình ảnh bản thân, vì thế
+              bạn hãy chọn bức ảnh trông chuyên nghiệp, chất lượng cao, nhưng
+              cũng không quá cứng nhắc như ảnh chụp giấy tờ tùy thân.
+              <br /> Phần tên là phần nổi bật nhất, vị trí trên cùng của CV, nên
+              giữ tên chỉ trong 1 dòng.
+            </p>
+            <p className="Description">
+              <h2>1. Ảnh chân dung và phần tên .</h2>
+              Bạn nên lưu ý những điểm sau:
+              <br /> Trình bày nổi bật, dễ tìm
+              <br /> Đầy đủ, chính xác: thông tin liên lạc, bao gồm: địa chỉ, số
+              điện thoại, email. Nên bổ sung link hồ sơ cá nhân để nhà tuyển
+              dụng dễ dàng tìm kiếm thêm thông tin về bạn: fb/ linkedin,
+              portfolio, web cá nhân (mạng xã hội là 1 ưu điểm nếu bạn biết tận
+              dụng làm thương hiệu cá nhân)
+              <br /> Những điều cần tránh: Đính kèm địa chỉ fb/ig cá nhân nếu nó
+              không thể hiện cho công việc bạn đang ứng tuyển. <br />
+              Link đính kèm quá dài, và không được tùy chỉnh URL
+            </p>
+            <p className="Description">
+              <h2>3. Mục tiêu nghề nghiệp/ Mô tả bản thân.</h2>
+              Những lưu ý để CV của bạn ấn tượng hơn: Viết ngắn gọn, dưới 100
+              từ, 1-2 câu <br />
+              Mục tiêu/ mô tả bản thân trả lời cho câu hỏi: Vì sao bạn phù hợp?
               <br />
+              Mục tiêu sự nghiệp của bạn là gì? Bạn có thể làm gì để đóng góp
+              cho công việc? Ví dụ: Trở thành kỹ sư lập trình nhúng IOT trong
+              mảng Smart home.
+              <br /> Tóm tắt những điểm mạnh, nổi bật của bạn. Những điều cần
+              tránh: Nội dung thiếu trọng tâm, không thể hiện được điểm phù hợp
+              của bạn với công việc và doanh nghiệp.
+              <br /> Nội dung chung chung, không thể hiện được điểm khác biệt
+              của bạn, ví dụ: học hỏi môi trường chuyên nghiệp.
+              <br /> Lấy nội dung CV của người khác đưa vào.
             </p>
+            <p className="Description">
+              <h2>4. Kinh nghiệm làm việc :</h2>
+              [Tên vị trí công việc 1] [Thời gian làm việc] [Tên công ty] [Địa
+              điểm] [Mô tả trách nhiệm, thành tích]
+              <br /> Điều bạn nên làm: Sắp xếp theo thứ tự thời gian, từ gần
+              nhất đến xa nhất.
+              <br /> Nêu rõ tên công ty, thời gian bắt đầu - kết thúc công việc.
+              <br />
+              Trả lời được những câu hỏi: Công việc bạn đã làm là gì? Bạn đã làm
+              thế nào? Giá trị bạn tạo ra cho công việc là gì?
+              <br /> Tận dụng những con số khi mô tả trách nhiệm và thành tích.
+              <br />
+              Tận dụng những từ khóa liên quan đến công việc ứng tuyển. <br />
+              Bạn cần tránh: <br />
+              Viết dài dòng như một đoạn văn Đề cập kinh nghiệm không liên quan.
+              Chung chung, không đưa ra được cụ thể nội dung công việc. <br />
+              Kinh nghiệm liên quan nhưng đã quá lâu không làm.
+            </p>
+            <p className="Description">
+              <h2>5. Học vấn/ Bằng cấp, chứng chỉ:</h2>
+              Học vấn/ bằng cấp: Theo thứ tự bằng cao ở trên, thấp ở dưới.
+              <br /> Chứng chỉ: Theo thứ tự thời gian trên bằng. <br /> Những
+              điều nên làm: <br />
+              Nêu điểm số môn chuyên ngành liên quan, nếu là điểm giỏi/ nổi
+              trội. <br />
+              Học bổng, đề án, nghiên cứu khoa học hoặc những khóa học liên quan
+              đến vị trí ứng tuyển. <br /> Chứng chỉ ngoại ngữ, kỹ năng, khóa
+              học… Không nên: Ghi quá trình học tập từ các cấp phổ thông.
+            </p>
+            <p className="Description">
+              <h2>6. Kỹ năng:</h2>
+              Nên: <br />
+              Phân biệt kỹ năng chuyên môn và kỹ năng mềm <br />
+              Đặt những kỹ năng quan trọng và liên quan đến công việc nhất lên
+              trước. <br />
+              Không nên: <br />
+              Dùng các thang đo kỹ năng một cách chung chung, không rõ ràng. Nêu
+              những kỹ năng mà bạn không có. <br />
+              Dùng từ ngữ mơ hồ, không rõ ràng.
+            </p>
+            <p className="Description">
+              <h2>7. Các mục khác (Sở thích, sở trường, các hoạt động XH) :</h2>
+              Nên: <br />
+              Thể hiện tính cách, sở thích nổi bật và tài lẻ, phù hợp với công
+              việc <br />
+              Miêu tả ngắn gọn để làm rõ hơn sở thích và đam mê cá nhân <br />
+              Thêm nguồn tham vấn (References) <br />
+              Không nên: <br />
+              Đưa ra những thông tin chung chung, gây loãng CV, tốn diện tích.
+              <br />
+              Sở thích trái ngược với đặc thù doanh nghiệp, công việc mà bạn
+              đang ứng tuyển.
+            </p>
+            <p className="Description"></p>
           </div>
         </Container>
       </div>
+      <Footer />
     </>
   );
 }
-export default TricksDetails;
+export default BlogPage1;

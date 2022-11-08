@@ -190,7 +190,9 @@ function RecruitDetail({ props }) {
               ref={form}
             >
               <Form.Group className="mb-3">
-                <Form.Label for="formCV">Tải lên CV của bạn</Form.Label>
+                <Form.Label for="formCV">
+                  CV của bạn<span style={{ color: "red" }}>*</span>
+                </Form.Label>
                 <Form.Control
                   type="file"
                   required
@@ -200,7 +202,9 @@ function RecruitDetail({ props }) {
                 />
               </Form.Group>
               <Form.Group className="mb-3">
-                <Form.Label for="formName">Họ &amp; tên bạn</Form.Label>
+                <Form.Label for="formName">
+                  Họ và tên bạn<span style={{ color: "red" }}>*</span>
+                </Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Họ &amp; tên bạn"
@@ -212,7 +216,9 @@ function RecruitDetail({ props }) {
                 />
               </Form.Group>
               <Form.Group className="mb-3">
-                <Form.Label for="formEmail">Địa chỉ email</Form.Label>
+                <Form.Label for="formEmail">
+                  Địa chỉ email<span style={{ color: "red" }}>*</span>
+                </Form.Label>
                 <Form.Control
                   type="email"
                   placeholder="Địa chỉ email"
@@ -224,7 +230,9 @@ function RecruitDetail({ props }) {
                 />
               </Form.Group>
               <Form.Group className="mb-3">
-                <Form.Label for="formTel">Số điện thoại của bạn</Form.Label>
+                <Form.Label for="formTel">
+                  Số điện thoại của bạn<span style={{ color: "red" }}>*</span>
+                </Form.Label>
                 <Form.Control
                   type="tel"
                   placeholder="Số điện thoại"

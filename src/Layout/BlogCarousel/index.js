@@ -5,17 +5,17 @@ import "./BlogCarousel.scss";
 import "../../App/Post/Post.scss";
 // Import Component
 import HeadingSection from "../../App/Component/HeadingSection";
-import Post from "../../App/Post";
 import Footer from "../../App/Footer/FooterCarousel";
+import { Link } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import TrickCard from "../../App/Card/TrickCard";
-import Blogcover1 from "../../Asset/image/blogcover5.jpg";
-import Blogcover2 from "../../Asset/image/blogcover3.png";
-import Blogcover3 from "../../Asset/image/blogcover4.png";
+import Blogcover1 from "../../Asset/image/blogcover6.jpg";
+import Blogcover2 from "../../Asset/image/blogcover7.png";
+import Blogcover3 from "../../Asset/image/blogcover8.jpg";
 const colorHeading = {
   color: "#333",
 };
@@ -28,7 +28,7 @@ function BlogCarousel() {
       display: "flex",
     },
     cardBig: {
-      height: "66rem",
+      height: "60rem",
     },
   };
   useEffect(() => {
@@ -45,39 +45,44 @@ function BlogCarousel() {
         <Container className="post-container">
           <Row className="mb-5" md={12}>
             <Col md={8}>
-              <TrickCard
-                image={Blogcover1}
-                style={styleBlogCarousel.cardBig}
-                styleDescription={styleBlogCarousel.styledDescription}
-                tiltle="Hoạt động Review Sách"
-                description="Đến hẹn lại lên, buổi Book Review vừa qua đã mang tới những cuốn sách tâm đắc nhất mà các thành viên của team đã đọc trong tháng 07. Từ những trang sách, qua mỗi góc nhìn, các thành viên team marketing đã dẫn dắt mọi người đi qua những câu chuyện khác nhau..."
-                author="Phạm Thanh Mai"
-                time="01/11/2022"
-              />
+              <Link to="/blog/blogPage1">
+                <TrickCard
+                  image={Blogcover1}
+                  style={styleBlogCarousel.cardBig}
+                  tiltle="Hiệu ứng Dunning  Kruger và sự ảo tưởng sức mạnh mà lập trình viên nên tránh"
+                  description="Hiệu ứng Dunning & Kruger (Dunning & Kruger Effect) là một trong những khái niệm mang tính nền tảng của Product Design (bao trùm luôn cả UX và UI Design)...."
+                  author="Phạm Thanh Mai"
+                  time="01/11/2022"
+                />
+              </Link>
             </Col>
             <Col md={4}>
               <Row>
                 <Col>
-                  <TrickCard
-                    image={Blogcover2}
-                    style={styleBlogCarousel.cardSmall}
-                    tiltle="Hành trình ra khơi - Lumi Hạ Long 2022"
-                    description="Hành trình tham gia với hơn 200 thành viên bao gồm CBNV Lumi và các NPP trên 62 tỉnh thành trên cả nước. Với điểm đến Hạ Long, là món quà tuyệt diệu của thiên nhiên mang lại, đây là địa danh vô cùng ý nghĩa nhân dịp kỷ niệm 10 năm thành lập của Lumi..."
-                    author="Phạm Thanh Mai"
-                    time="01/11/2022"
-                  />
+                  <Link to="/blog/blogPage2">
+                    <TrickCard
+                      image={Blogcover2}
+                      style={styleBlogCarousel.cardSmall}
+                      tiltle="Khoảng trống kiến thức giữa sinh viên IT và Lập trình viên"
+                      description="Do ngành IT đang dần thành một ngành hot ở Việt Nam (việc nhẹ lương cao, nhu cầu tuyển dụng nhiều), nhiều bạn sinh viên đổ xô vào chọn học các ngành công nghệ thông tin..."
+                      author="Phạm Thanh Mai"
+                      time="01/11/2022"
+                    />
+                  </Link>
                 </Col>
               </Row>
               <Row>
                 <Col>
-                  <TrickCard
-                    image={Blogcover3}
-                    style={styleBlogCarousel.cardSmall}
-                    tiltle="Trung thu yêu thương cùng Lumi"
-                    description="Đến với vòng phỏng vấn tại Lumi, nghĩa là bạn đã vượt qua các vòng CV, test, chỉ còn vượt qua vòng phỏng vấn nữa thôi là bạn đã gia nhập đại gia đình Lumi rồi đấy. Vậy thì hãy nằm lòng bí kíp sau đây, tận dụng cơ hội phỏng vấn để gây ấn tượng với Ban Tuyển Dụng nhé. Bạn hãy chuẩn bị kỹ càng những bước sau đây... "
-                    author="Phạm Thanh Mai"
-                    time="01/11/2022"
-                  />
+                  <Link to="/blog/blogPage3">
+                    <TrickCard
+                      image={Blogcover3}
+                      style={styleBlogCarousel.cardSmall}
+                      tiltle="Kỹ năng tìm kiếm thông tin"
+                      description="Câu nói vui trước khi hỏi ai gì đó thì người được hỏi sẽ bảo bạn Đã GOOGLE chưa Lumi đánh giá đây là phần quan trọng nhất trong kỹ năng giải quyết vấn đề... "
+                      author="Phạm Thanh Mai"
+                      time="01/11/2022"
+                    />
+                  </Link>
                 </Col>
               </Row>
             </Col>
